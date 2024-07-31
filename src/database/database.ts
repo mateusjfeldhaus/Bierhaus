@@ -7,7 +7,7 @@ import { IDrink } from "../providers/drinksContext";
 //   recipe: "",
 //   img: [""],
 //   hidden: false,
-// }
+// },
 
 export const drinksDatabase: IDrink[] = [
   // Cachaça
@@ -208,7 +208,8 @@ export const drinksDatabase: IDrink[] = [
       "20 mL Xarope Simples",
       "20 mL Monin Sabores",
     ],
-    recipe: "Drink batido com coagem simples servido no Copo Rocks.",
+    recipe:
+      "Drink batido com coagem simples servido no Copo Rocks com cubo de gelo grande.",
     img: [
       "../../assets/Bramble Black-01.jpg",
       "../../assets/Bramble Black-02.jpg",
@@ -266,7 +267,6 @@ export const drinksDatabase: IDrink[] = [
     img: ["../../assets/Bronx-01.jpg", "../../assets/Bronx-02.jpg"],
     hidden: false,
   },
-
   // Licores
   {
     name: "Carajillo",
@@ -318,7 +318,6 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-
   {
     name: "Ice Tea",
     type: ["Não Alcoólicos"],
@@ -332,7 +331,6 @@ export const drinksDatabase: IDrink[] = [
     img: ["../../assets/Ice Tea-01.jpg", "../../assets/Ice Tea-02.jpg"],
     hidden: false,
   },
-
   {
     name: "Pink Lemonade",
     type: ["Não Alcoólicos"],
@@ -348,7 +346,6 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: true,
   },
-
   // Rum
   {
     name: "Mojito",
@@ -363,6 +360,52 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Limão cortado em sestos e macerado para remover o suco. Drink montado servido no Copo Longo com cubos de gelo. Finalizado com hortelã e rodela de limão.",
     img: ["../../assets/Mojito-01.jpg", "../../assets/Mojito-02.jpg"],
+    hidden: false,
+  },
+  {
+    name: "Cold Kiss",
+    type: ["Rum", "Vodka"],
+    ingredients: [
+      "20 mL Vodka",
+      "50 mL Rum Malibu",
+      "20 mL Monin Menta Glacial",
+      "20 mL Monin Limão Siciliano",
+      "50 mL Água de Coco",
+    ],
+    recipe:
+      "Drink batido, servido no Copo Longo, com cubos de gelo. Finalizado com espuma de gengibre e ramo de hortelã.",
+    img: ["../../assets/Cold Kiss-01.jpg", "../../assets/Cold Kiss-02.jpg"],
+    hidden: false,
+  },
+  {
+    name: "Piña Colada",
+    type: ["Rum"],
+    ingredients: [
+      "60 mL Rum",
+      "100 mL Suco de Abacaxi",
+      "50 mL Leite de Coco",
+      "30 mL Leite Condensado",
+    ],
+    recipe:
+      "Drink batido com simples coagem servido no Copo Longo com cubos de gelo. Finalizado com fatia de abacaxi e cereja.",
+    img: ["../../assets/Pina Colada-01.jpg", "../../assets/Pina Colada-02.jpg"],
+    hidden: false,
+  },
+  {
+    name: "Queens Park Swizzle",
+    type: ["Rum"],
+    ingredients: [
+      "60 mL Rum",
+      "30 mL Xarope Simples",
+      "30 mL Suco de Limão",
+      "2 Dashes Angostura",
+    ],
+    recipe:
+      "Drink montado, servido no Copo Longo, servido com cubos de gelo. Finalizado com ramo de hortelã.",
+    img: [
+      "../../assets/Queens Park Swizzle-01.jpg",
+      "../../assets/Queens Park Swizzle-02.jpg",
+    ],
     hidden: false,
   },
   {
@@ -392,21 +435,6 @@ export const drinksDatabase: IDrink[] = [
     img: ["../../assets/Mai Tai-01.jpg", "../../assets/Mai Tai-02.jpg"],
     hidden: false,
   },
-  {
-    name: "Pina Colada",
-    type: ["Rum"],
-    ingredients: [
-      "60 mL Rum",
-      "100 mL Suco de Abacaxi",
-      "50 mL Leite de Coco",
-      "30 mL Leite Condensado",
-    ],
-    recipe:
-      "Drink batido com simples coagem servido no Copo Longo com cubos de gelo. Finalizado com fatia de abacaxi e cereja.",
-    img: ["../../assets/Pina Colada-01.jpg", "../../assets/Pina Colada-02.jpg"],
-    hidden: false,
-  },
-
   // Sake
   {
     name: "Spicy Dreams",
@@ -427,6 +455,22 @@ export const drinksDatabase: IDrink[] = [
     hidden: false,
   },
   {
+    name: "Sakerinha de Maracujá",
+    type: ["Sake"],
+    ingredients: [
+      "100 mL Sake",
+      "50 mL Xarope Simples",
+      "50 mL Maracujá in Natura",
+    ],
+    recipe:
+      "Drink batido, com dupla coagem, servido no Copo Rocks com cubo de gelo.",
+    img: [
+      "../../assets/Maracuja com Sake-01.jpg",
+      "../../assets/Maracuja com Sake-02.jpg",
+    ],
+    hidden: false,
+  },
+  {
     name: "Japanese Ice Tea",
     type: ["Sake"],
     ingredients: [
@@ -442,24 +486,6 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-
-  {
-    name: "Maracujá com Sake",
-    type: ["Sake"],
-    ingredients: [
-      "100 mL Sake",
-      "50 mL Xarope Simples",
-      "50 mL Maracujá in Natura",
-    ],
-    recipe:
-      "Drink batido, com dupla coagem, servido no Copo Rocks com cubo de gelo.",
-    img: [
-      "../../assets/Maracuja com Sake-01.jpg",
-      "../../assets/Maracuja com Sake-02.jpg",
-    ],
-    hidden: false,
-  },
-
   // Tequila
   {
     name: "Margarita",
@@ -472,6 +498,53 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido com dupla coagem servido na Taça Margarita levemente resfriada. Finalizado com borda de sal e fatia de limão na borda.",
     img: ["../../assets/Margarita-01.jpg", "../../assets/Margarita-02.jpg"],
+    hidden: false,
+  },
+  {
+    name: "Blue Velvet Margarita",
+    type: ["Tequila", "Triple Sec"],
+    ingredients: [
+      "60 mL Tequila",
+      "30 mL Curaçau Blue",
+      "30 mL Suco de Limão",
+      "15 mL Cointreau",
+    ],
+    recipe:
+      "Drink batido, com dupla coagem, servido na Taça Margarita levemente resfriada. Finalizado com borda de sal e fatia de limão na borda.",
+    img: [
+      "../../assets/Blue Velvet Margarita-01.jpg",
+      "../../assets/Blue Velvet Margarita-02.jpg",
+    ],
+    hidden: false,
+  },
+  {
+    name: "Teqroni",
+    type: ["50 mL Tequila", "50 mL Campari", "50 mL Vermouth Rosso"],
+    ingredients: ["50 mL Tequila", "50 mL Campari", "50 mL Vermouth Rosso"],
+    recipe:
+      "Drink Mexido com coagem simples, servido no Copo Rocks, com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
+    img: [""],
+    hidden: false,
+  },
+  {
+    name: "Long Island Ice Tea",
+    type: ["Tequila", "Gin", "Vodka", "Rum", "Triple Sec"],
+    ingredients: [
+      "10 mL Tequila",
+      "10 mL Gin",
+      "10 mL Vodka",
+      "10 mL Rum",
+      "10 mL Cointreau",
+      "15 mL Xarope Simples",
+      "15 mL Suco de Limão",
+      "Completar com Coca-Cola",
+    ],
+    recipe:
+      "Drink batido, com simples coagem, servido em Copo Longo, com cubos de gelo.",
+    img: [
+      "../../assets/Long Island Ice Tea-01.jpg",
+      "../../assets/Long Island Ice Tea-02.jpg",
+    ],
     hidden: false,
   },
   {
@@ -520,7 +593,6 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-
   // Vodka
   {
     name: "Moscow Mule",
@@ -537,20 +609,41 @@ export const drinksDatabase: IDrink[] = [
     hidden: false,
   },
   {
-    name: "Cosmopolitan",
-    type: ["Vodka", "Triple Sec"],
+    name: "Vodka Soda",
+    type: ["Vodka"],
     ingredients: [
-      "40 mL Vodka",
-      "30 mL Cointreau",
-      "20 mL Suco de Limão",
-      "20 mL Suco de Cranberry",
+      "50 mL Vodka",
+      "15 mL Suco de Limão",
+      "Completar com Água com Gás",
     ],
     recipe:
-      "Drink batido com dupla coagem servido na Taça Martini levemente resfriada. Finalizado com zest de limão siciliano.",
+      "Drink montado em um Copo Rocks, com cubo de gelo grande. Finalizado com 2 rodelas de limão.",
+    img: ["../../assets/Vodka Soda-01.jpg", "../../assets/Vodka Soda-02.jpg"],
+    hidden: false,
+  },
+  {
+    name: "Espresso Martini",
+    type: ["Vodka", "Licores"],
+    ingredients: ["50 mL Vodka", "30 mL Licor Kahluá", "50 mL Café Expresso"],
+    recipe: "Drink batido, servido na Taça Martini gelada, com dupla coagem.",
     img: [
-      "../../assets/Cosmopolitan-01.jpg",
-      "../../assets/Cosmopolitan-02.jpg",
+      "../../assets/Espresso Martini-01.jpg",
+      "../../assets/Espresso Martini-02.jpg",
     ],
+    hidden: false,
+  },
+  {
+    name: "Lagoa Azul",
+    type: ["Vodka", "Triple Sec"],
+    ingredients: [
+      "50 mL Vodka",
+      "30 mL Curaçau Blue",
+      "20 mL Suco de Limão",
+      "Completar com Club Soda",
+    ],
+    recipe:
+      "Drink montado, servido no Copo Longo, com cubos de gelo. Finalizado com rodela de laranja.",
+    img: ["../../assets/Lagoa Azul-01.jpg", "../../assets/Lagoa Azul-02.jpg"],
     hidden: false,
   },
   {
@@ -588,6 +681,23 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido servido na Taça Martini levemente resfriada. Finalizado com zest de limão.",
     img: ["../../assets/Lemon Drop-01.jpg", "../../assets/Lemon Drop-02.jpg"],
+    hidden: false,
+  },
+  {
+    name: "Cosmopolitan",
+    type: ["Vodka", "Triple Sec"],
+    ingredients: [
+      "40 mL Vodka",
+      "30 mL Cointreau",
+      "20 mL Suco de Limão",
+      "20 mL Suco de Cranberry",
+    ],
+    recipe:
+      "Drink batido com dupla coagem servido na Taça Martini levemente resfriada. Finalizado com zest de limão siciliano.",
+    img: [
+      "../../assets/Cosmopolitan-01.jpg",
+      "../../assets/Cosmopolitan-02.jpg",
+    ],
     hidden: false,
   },
   // Whisky
