@@ -280,7 +280,7 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Folha Experience",
     type: ["Licores"],
-    ingredients: ["50 mL Licor 43", "20 mL Monin Rantcho"],
+    ingredients: ["100 mL Licor 43", "40 mL Monin Rantcho"],
     recipe:
       "Drink batido com coagem simples servido no Copo Rocks com cubo de gelo grande. Finalizado com espuma de limão siciliano e raspas de limão siciliano.",
     img: [
@@ -652,11 +652,11 @@ export const drinksDatabase: IDrink[] = [
     type: ["Whisky", "Licores", "Vermouth"],
     ingredients: [
       "50 mL Whisky Bourbon",
-      "25 mL Campari",
-      "25 mL Vermouth Rosso",
+      "50 mL Campari",
+      "50 mL Vermouth Rosso",
     ],
     recipe:
-      "Drink mexido servido no Copo Rocks com cubo de gelo grande. Finalizado com zest de laranja.",
+      "Drink mexido servido no Copo Rocks com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
     img: [
       "../../assets/Boulevardier-01.jpg",
       "../../assets/Boulevardier-02.jpg",
