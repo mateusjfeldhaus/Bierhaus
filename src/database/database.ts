@@ -519,7 +519,7 @@ export const drinksDatabase: IDrink[] = [
   },
   {
     name: "Teqroni",
-    type: ["50 mL Tequila", "50 mL Campari", "50 mL Vermouth Rosso"],
+    type: ["Tequila", "Campari", "Vermouth"],
     ingredients: ["50 mL Tequila", "50 mL Campari", "50 mL Vermouth Rosso"],
     recipe:
       "Drink Mexido com coagem simples, servido no Copo Rocks, com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
@@ -721,9 +721,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Manhattan",
     type: ["Whisky", "Vermouth"],
     ingredients: [
-      "50 mL Whisky Bourbon",
-      "20 mL Vermouth Rosso",
-      "3 Dashes de Angostura",
+      "100 mL Whisky Bourbon",
+      "40 mL Vermouth Rosso",
+      "6 Dashes de Angostura",
     ],
     recipe:
       "Drink mexido servido na Taça Coupe levemente resfriada. Finalizado com cereja.",
