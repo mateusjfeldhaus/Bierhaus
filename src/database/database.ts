@@ -265,7 +265,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido com dupla coagem, servido na Taça Martini gelada. Finalizado com casca de laranja.",
     img: ["../../assets/Bronx-01.jpg", "../../assets/Bronx-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   // Licores
   {
@@ -401,7 +401,7 @@ export const drinksDatabase: IDrink[] = [
       "2 Dashes Angostura",
     ],
     recipe:
-      "Drink montado, servido no Copo Longo, servido com cubos de gelo. Finalizado com ramo de hortelã.",
+      "Drink batido, com dupla coagem, servido na Taça Martini resfriada.",
     img: [
       "../../assets/Queens Park Swizzle-01.jpg",
       "../../assets/Queens Park Swizzle-02.jpg",
@@ -440,10 +440,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Spicy Dreams",
     type: ["Sake", "Licores"],
     ingredients: [
-      "50 mL Sake",
-      "25 mL Aperol",
-      "30 mL Monin Limão Siciliano",
-      "15 mL Monin Rantcho",
+      "100 mL Sake",
+      "50 mL Aperol",
+      "60 mL Monin Limão Siciliano",
+      "30 mL Monin Rantcho",
       "Pimenta Rosa",
     ],
     recipe:
