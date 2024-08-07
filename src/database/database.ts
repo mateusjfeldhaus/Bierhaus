@@ -351,14 +351,14 @@ export const drinksDatabase: IDrink[] = [
     name: "Mojito",
     type: ["Rum"],
     ingredients: [
-      "50 mL Rum",
-      "50 mL Suco de Limão",
+      "60 mL Rum",
       "30 mL Xarope Simples",
-      "Completar com Água com Gás",
+      "Suco de 1 Limão",
       "8 Folhas de Hortelã",
+      "Completar com Água com Gás",
     ],
     recipe:
-      "Limão cortado em sestos e macerado para remover o suco. Drink montado servido no Copo Longo com cubos de gelo. Finalizado com hortelã e rodela de limão.",
+      "Hortelã levemente Macerada no shaker. Drink batido sem a água com gás, servido no Copo Longo com cubos de gelo sem coagem. Finalizado com água com gás até o topo e levemente mexido.",
     img: ["../../assets/Mojito-01.jpg", "../../assets/Mojito-02.jpg"],
     hidden: false,
   },
