@@ -26,21 +26,19 @@ export const Footer = () => {
   const handleNext = () => {
     if (currentIndex === menuItems.length - 1) {
       navigate(menuItems[0].path);
-      window.scrollTo(0, 0);
     } else {
       navigate(menuItems[currentIndex + 1].path);
-      window.scrollTo(0, 0);
     }
+    window.scrollTo(0, 0);
   };
 
   const handlePrevious = () => {
     if (currentIndex === 0) {
       navigate(menuItems[menuItems.length - 1].path);
-      window.scrollTo(0, 0);
     } else {
       navigate(menuItems[currentIndex - 1].path);
-      window.scrollTo(0, 0);
     }
+    window.scrollTo(0, 0);
   };
 
   return (
