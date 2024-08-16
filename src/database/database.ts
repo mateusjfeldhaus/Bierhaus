@@ -417,7 +417,7 @@ export const drinksDatabase: IDrink[] = [
       "20 mL Xarope Simples",
     ],
     recipe:
-      "Drink batido com dupla coagem servido na Taça Coupe gelada. Finalizado com zest de limão siciliano.",
+      "Drink batido com dupla coagem servido na Taça Martini gelada. Finalizado com zest de limão siciliano.",
     img: ["../../assets/Daiquiri-01.jpg", "../../assets/Daiquiri-02.jpg"],
     hidden: false,
   },
