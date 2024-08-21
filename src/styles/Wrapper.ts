@@ -5,6 +5,7 @@ export const StyledWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   height: 100%;
   overflow: hidden;
   width: 100%;

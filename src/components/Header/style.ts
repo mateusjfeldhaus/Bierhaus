@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
 
+  max-width: 1200px;
   width: 100%;
 
   img {

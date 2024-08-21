@@ -37,7 +37,7 @@ export const drinksDatabase: IDrink[] = [
     type: ["Cachaça", "Triple Sec"],
     ingredients: [
       "75 mL Cachaça",
-      "25 mL Triple Sec",
+      "25 mL Cointreau",
       "25 mL Suco de Laranja",
       "25 mL Suco de Limão",
       "15 mL Xarope Semi-Rich",
@@ -422,17 +422,20 @@ export const drinksDatabase: IDrink[] = [
     hidden: false,
   },
   {
-    name: "Mai Tai",
+    name: "Cointreau Daiquiri",
     type: ["Rum", "Triple Sec"],
     ingredients: [
       "40 mL Rum",
       "40 mL Suco de Limão",
       "20 mL Xarope Simples",
-      "20 mL Triple Sec",
+      "20 mL Cointreau",
     ],
     recipe:
       "Drink batido com simples coagem servido no Copo Longo com cubos de gelo. Finalizado com fatia de limão.",
-    img: ["../../assets/Mai Tai-01.jpg", "../../assets/Mai Tai-02.jpg"],
+    img: [
+      "../../assets/Cointreau Daiquiri-01.jpg",
+      "../../assets/Cointreau Daiquiri-02.jpg",
+    ],
     hidden: false,
   },
   // Sake
