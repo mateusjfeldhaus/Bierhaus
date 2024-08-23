@@ -507,7 +507,7 @@ export const drinksDatabase: IDrink[] = [
     name: "Blue Velvet Margarita",
     type: ["Tequila", "Triple Sec"],
     ingredients: [
-      "60 mL Tequila",
+      "60 mL Tequila Silver",
       "30 mL Curaçau Blue",
       "30 mL Suco de Limão",
       "15 mL Cointreau",
@@ -523,7 +523,11 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Teqroni",
     type: ["Tequila", "Campari", "Vermouth"],
-    ingredients: ["50 mL Tequila", "50 mL Campari", "50 mL Vermouth Rosso"],
+    ingredients: [
+      "50 mL Tequila Silver",
+      "50 mL Campari",
+      "50 mL Vermouth Rosso",
+    ],
     recipe:
       "Drink Mexido com coagem simples, servido no Copo Rocks, com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
     img: [""],
@@ -533,7 +537,7 @@ export const drinksDatabase: IDrink[] = [
     name: "Long Island Ice Tea",
     type: ["Tequila", "Gin", "Vodka", "Rum", "Triple Sec"],
     ingredients: [
-      "10 mL Tequila",
+      "10 mL Tequila Silver",
       "10 mL Gin",
       "10 mL Vodka",
       "10 mL Rum",
@@ -554,7 +558,7 @@ export const drinksDatabase: IDrink[] = [
     name: "Tequila Sunrise",
     type: ["Tequila"],
     ingredients: [
-      "50 mL Tequila",
+      "50 mL Tequila Silver",
       "10 mL Grenadine",
       "Completar com Suco de Laranja",
     ],
@@ -570,7 +574,7 @@ export const drinksDatabase: IDrink[] = [
     name: "Matador",
     type: ["Tequila"],
     ingredients: [
-      "50 mL Tequila",
+      "50 mL Tequila Silver",
       "100 mL Suco de Abacaxi",
       "20 mL Suco de Limão",
     ],
@@ -583,7 +587,7 @@ export const drinksDatabase: IDrink[] = [
     name: "Mexican Mule",
     type: ["Tequila"],
     ingredients: [
-      "50 mL Tequila",
+      "50 mL Tequila Silver",
       "25 mL Suco de Limão",
       "15 mL Monin Gengibre",
       "Completar com Água com Gás",

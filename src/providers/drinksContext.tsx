@@ -10,6 +10,12 @@ export interface IDrink {
   hidden: boolean;
 }
 
+export interface IBevarege {
+  name: string;
+  price: number;
+  quantity: number;
+}
+
 export interface IDrinkProviderProps {
   children: React.ReactNode;
 }
@@ -163,6 +169,27 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
       )
     );
   };
+
+  // const calculateDrinkPrice = (drinks: IDrink[], beverages: IBevarege[]) => {
+  //   return drinks.map((drink) => {
+  //     let totalCost = drink.ingredients.reduce((acc, ingredient) => {
+  //       // Find the beverage that matches the ingredient name
+  //       const beverage  = beverages.find(
+  //         (bev) => bev.name === ingredient
+  //       );
+  //       if (beverage) {
+  //         // Calculate the cost for this ingredient
+  //         acc += (beverage.quantity / beverage.price) * ingredient.quantity;
+  //       }
+  //       return acc;
+  //     }, 0);
+
+  //     return {
+  //       name: drink.name,
+  //       price: totalCost.toFixed(2), // Round to two decimal places
+  //     };
+  //   });
+  // };
 
   return (
     <DrinkContext.Provider
