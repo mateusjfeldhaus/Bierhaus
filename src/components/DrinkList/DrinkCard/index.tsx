@@ -28,6 +28,8 @@ export const DrinkCard = ({ drinks }: { drinks: IDrink[] }) => {
                   return `${ingredient.quantity} de ${ingredient.name}`;
                 } else if (ingredient.name === "Bitter de Laranja") {
                   return `${ingredient.quantity} dashes de ${ingredient.name}`;
+                } else if (ingredient.name === "Limão") {
+                  return `Suco de ${ingredient.quantity} ${ingredient.name}`;
                 } else {
                   return `${ingredient.quantity} mL de ${ingredient.name}`;
                 }

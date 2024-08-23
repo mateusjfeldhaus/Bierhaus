@@ -15,9 +15,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Caipirinha",
     type: ["Cachaça"],
     ingredients: [
-      { name: "Rum", quantity: 40 },
-      { name: "Suco de Limão", quantity: 20 },
-      { name: "Xarope Simples", quantity: 10 },
+      { name: "Cachaça", quantity: 100 },
+      { name: "Xarope Simples", quantity: 50 },
+      { name: "Limão", quantity: 1 },
     ],
     recipe:
       "Limão cortado em quartos e levemente amassado para remover o suco. Drink batido servido no Copo Rocks sem coagem.",
@@ -66,7 +66,7 @@ export const drinksDatabase: IDrink[] = [
       { name: "Suco de Laranja", quantity: 25 },
       { name: "Suco de Limão Siciliano", quantity: 10 },
       { name: "Suco de Limão", quantity: 10 },
-      { name: "Monin Groselha/Fambroesa", quantity: 15 },
+      { name: "Monin Groselha/Framboesa", quantity: 15 },
     ],
     recipe:
       "Drink batido servido no Copo Longo com cubos de gelo. Finalizado com rodela de limão.",
@@ -393,7 +393,7 @@ export const drinksDatabase: IDrink[] = [
     ingredients: [
       { name: "Rum", quantity: 60 },
       { name: "Xarope Simples", quantity: 30 },
-      { name: "Suco de Limão", quantity: 30 },
+      { name: "Suco de Limão", quantity: 35 },
       { name: "Hortelã", quantity: 8 },
       { name: "Água com Gás", quantity: "Completar" },
     ],
@@ -855,8 +855,8 @@ export const drinksDatabase: IDrink[] = [
       { name: "Whisky Bourbon", quantity: 45 },
       { name: "Limoncello", quantity: 45 },
       { name: "Dry Vermouth", quantity: 15 },
-      { name: "Angostura", quantity: "1 Dash" },
-      { name: "Bitter de Laranja", quantity: 1 },
+      { name: "Angostura", quantity: 1 },
+      { name: "Angostura de Laranja", quantity: 1 },
     ],
     recipe:
       "Drink mexido servido no Copo Rocks com cubo de gelo grande. Finalizado com Casca de Laranja",

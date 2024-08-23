@@ -41,6 +41,15 @@ export interface IDrinkContext {
     database: IDrink[],
     ingredientName: string
   ): IDrink[];
+  costPerDrink: (
+    drinksDatabase: IDrink[],
+    beveragesDatabase: IBevarege[],
+    drink: string
+  ) => number | null | undefined;
+  getAllDrinksPrices(
+    drinksDatabase: IDrink[],
+    beveragesDatabase: IBevarege[]
+  ): string[];
 }
 
 export const DrinkContext = createContext({} as IDrinkContext);
@@ -114,10 +123,10 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
     return ingredientSummary;
   };
 
-  function filterDrinksByIngredient(
+  const filterDrinksByIngredient = (
     database: IDrink[],
     ingredientName: string
-  ): IDrink[] {
+  ): IDrink[] => {
     const searchTerm = ingredientName.toLowerCase();
 
     return database.filter((drink) =>
@@ -125,6 +134,105 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
         ingredient.name.toLowerCase().includes(searchTerm)
       )
     );
+  };
+
+  const costPerDrink = (
+    drinksDatabase: IDrink[],
+    beveragesDatabase: IBevarege[],
+    drink: string
+  ): number | null | undefined => {
+    // Função Auxiliar para buscar o preço de um ingrediente na base de dados
+    const getPricePerMl = (ingredientName: string): number | null => {
+      const beverage = beveragesDatabase.find(
+        (beverage) => beverage.name === ingredientName
+      );
+
+      if (beverage) {
+        const costPerMl = beverage.price / beverage.quantity;
+        return costPerMl;
+      } else {
+        console.error(
+          `Ingrediente ${ingredientName} não encontrado na base de dados.`
+        );
+        return null;
+      }
+    };
+
+    // Achar o Drink na base de dados
+    const foundDrink = drinksDatabase.find(
+      (item) => item.name.toLowerCase() === drink.toLowerCase()
+    );
+
+    // Tratar o Erro caso o Drink não seja encontrado
+    if (!foundDrink) {
+      console.error("Drink não encontrado");
+      return null;
+    }
+
+    let totalPrice = 0;
+
+    // Loop por todos os ingredients do drink
+    foundDrink.ingredients.forEach((ingredient) => {
+      const pricePerUnit = getPricePerMl(ingredient.name);
+
+      if (pricePerUnit === null) {
+        return null;
+      }
+
+      // Lidar com o Caso que na receita pede para completar com um ingrediente
+      if (ingredient.quantity === "Completar") {
+        totalPrice +=
+          pricePerUnit *
+          beveragesDatabase.find(
+            (beverage) => beverage.name === ingredient.name
+          )!.quantity;
+        return;
+      } else if (ingredient.quantity === "Pitada") {
+        totalPrice +=
+          pricePerUnit *
+          beveragesDatabase.find(
+            (beverage) => beverage.name === ingredient.name
+          )!.quantity;
+        return;
+      } else {
+        totalPrice +=
+          Number(ingredient.quantity) * Number(getPricePerMl(ingredient.name));
+      }
+    });
+
+    return parseFloat(totalPrice.toFixed(2));
+  };
+
+  function getAllDrinksPrices(
+    drinksDatabase: IDrink[],
+    beveragesDatabase: IBevarege[]
+  ): string[] {
+    const results: { name: string; price: number }[] = [];
+
+    for (const drink of drinksDatabase) {
+      const price = costPerDrink(drinksDatabase, beveragesDatabase, drink.name);
+
+      // Garantindo que `price` seja um número
+      const finalPrice = price ?? 0;
+
+      if (finalPrice > 0) {
+        results.push({ name: drink.name, price: finalPrice });
+      } else {
+        results.push({ name: drink.name, price: 0 });
+      }
+    }
+
+    // Ordena os resultados em ordem decrescente de preço
+    results.sort((a, b) => b.price - a.price);
+
+    // Converte os resultados para strings formatadas
+    return results.map((result) => {
+      if (result.price > 0) {
+        return `${result.name} custa R$ ${result.price.toFixed(2)}`;
+      } else {
+        return `${result.name} não pôde ser calculado.`;
+      }
+    });
   }
 
   return (
@@ -142,6 +250,8 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
         whiskyList,
         sumOfIngredients,
         filterDrinksByIngredient,
+        costPerDrink,
+        getAllDrinksPrices,
       }}
     >
       {children}
