@@ -9,7 +9,7 @@ export const HomePage = () => {
     useContext(DrinkContext);
 
   // console.log(sumOfIngredients(drinksDatabase));
-  // console.log(filterDrinksByIngredient(drinksDatabase, "limão siciliano"));
+  // console.log(filterDrinksByIngredient(drinksDatabase, "limão"));
   // console.log(filterDrinksByIngredient(drinksDatabase, "Dry Vermouth"));
 
   return (

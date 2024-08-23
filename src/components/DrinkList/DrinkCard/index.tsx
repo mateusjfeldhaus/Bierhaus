@@ -10,7 +10,30 @@ export const DrinkCard = ({ drinks }: { drinks: IDrink[] }) => {
       {drinksToShow.map((drink) => (
         <div key={drink.name}>
           <h2>{drink.name}</h2>
-          <p>Ingredientes: {drink.ingredients.join(", ")}</p>
+          <p>
+            Ingredientes:{" "}
+            {drink.ingredients
+              .map((ingredient) => {
+                if (ingredient.name === "Hortelã") {
+                  return `${ingredient.quantity} folhas de ${ingredient.name}`;
+                } else if (ingredient.quantity === "Completar") {
+                  return `Completar com ${ingredient.name}`;
+                } else if (ingredient.name === "Angostura") {
+                  return `${ingredient.quantity} dashes de ${ingredient.name}`;
+                } else if (ingredient.name.includes("Redbull")) {
+                  return `${ingredient.quantity} Lata de ${ingredient.name}`;
+                } else if (ingredient.name === "Clara de Ovo") {
+                  return `${ingredient.quantity} ${ingredient.name}`;
+                } else if (ingredient.name === "Pimenta Rosa") {
+                  return `${ingredient.quantity} de ${ingredient.name}`;
+                } else if (ingredient.name === "Bitter de Laranja") {
+                  return `${ingredient.quantity} dashes de ${ingredient.name}`;
+                } else {
+                  return `${ingredient.quantity} mL de ${ingredient.name}`;
+                }
+              })
+              .join(", ") + "."}
+          </p>
           <p>Modo de preparo: {drink.recipe}</p>
           <div className="images">
             {drink.img.map((img, index) => (

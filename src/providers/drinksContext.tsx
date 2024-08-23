@@ -1,10 +1,15 @@
 import { ReactNode, createContext } from "react";
 import { drinksDatabase } from "../database/database";
 
+export interface IDrinkIngredients {
+  name: string;
+  quantity: number | string;
+}
+
 export interface IDrink {
   name: string;
   type: string[];
-  ingredients: string[];
+  ingredients: IDrinkIngredients[];
   recipe: string;
   img: string[];
   hidden: boolean;
@@ -31,8 +36,11 @@ export interface IDrinkContext {
   tequilaList: IDrink[];
   vodkaList: IDrink[];
   whiskyList: IDrink[];
-  sumOfIngredients: (drinks: IDrink[]) => Record<string, number>;
-  filterDrinksByIngredient: (drinks: IDrink[], ingredient: string) => IDrink[];
+  sumOfIngredients: (database: IDrink[]) => Record<string, number>;
+  filterDrinksByIngredient(
+    database: IDrink[],
+    ingredientName: string
+  ): IDrink[];
 }
 
 export const DrinkContext = createContext({} as IDrinkContext);
@@ -49,147 +57,75 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
     return drink.type.includes("Cachaça");
   });
 
-  // Método Antigo, quando o type era uma string e não um array
-  // const espumanteList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Espumante");
-  // });
-
   const espumanteList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Espumante");
   });
-
-  // Método Antigo, quando o type era uma string e não um array
-  // const ginList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Gin");
-  // });
 
   const ginList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Gin");
   });
 
-  // Método Antigo, quando o type era uma string e não um array
-  // const licoresList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Licores");
-  // });
-
   const licoresList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Licores");
   });
-
-  // Método Antigo, quando o type era uma string e não um array
-  // const alkoholfreiList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Não Alcoólicos");
-  // });
 
   const alkoholfreiList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Não Alcoólicos");
   });
 
-  // Método Antigo, quando o type era uma string e não um array
-  // const rumList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Rum");
-  // });
-
   const rumList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Rum");
   });
-
-  // Método Antigo, quando o type era uma string e não um array
-  // const sakeList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Sake");
-  // });
 
   const sakeList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Sake");
   });
 
-  // Método Antigo, quando o type era uma string e não um array
-  // const tequilaList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Tequila");
-  // });
-
   const tequilaList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Tequila");
   });
-
-  // Método Antigo, quando o type era uma string e não um array
-  // const vodkaList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Vodka");
-  // });
 
   const vodkaList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Vodka");
   });
 
-  // Método Antigo, quando o type era uma string e não um array
-  // const whiskyList: IDrink[] = drinksDatabase.filter((drink) => {
-  //   return drink.type.map((drinkType) => drinkType === "Whisky");
-  // });
-
   const whiskyList: IDrink[] = drinksDatabase.filter((drink: IDrink) => {
     return drink.type.includes("Whisky");
   });
 
-  const sumOfIngredients = (drinks: IDrink[]): Record<string, number> => {
-    const ingredientTotals: Record<string, number> = {};
+  const sumOfIngredients = (database: IDrink[]): Record<string, number> => {
+    const ingredientSummary: Record<string, number> = {};
 
-    drinks.forEach((drink: any) => {
-      drink.ingredients.forEach((ingredient: any) => {
-        const [amount, ...nameParts] = ingredient.split(" ");
-        const name = nameParts.join(" ");
+    function parseQuantity(quantity: number | string): number {
+      return typeof quantity === "string" ? parseFloat(quantity) : quantity;
+    }
 
-        const numericAmount = parseFloat(amount);
-        const unit = nameParts.length > 1 ? nameParts[0] : "";
-
-        const ingredientName = unit ? name.split(" ").slice(1).join(" ") : name;
-
-        // Mostrar a Unidade
-        // const ingredientName = unit
-        //   ? `${unit} ${name.split(" ").slice(1).join(" ")}`
-        //   : name;
-
-        if (!ingredientTotals[ingredientName]) {
-          ingredientTotals[ingredientName] = 0;
+    database.forEach((drink) => {
+      drink.ingredients.forEach((ingredient) => {
+        const quantity = parseQuantity(ingredient.quantity);
+        if (ingredientSummary[ingredient.name]) {
+          ingredientSummary[ingredient.name] += quantity;
+        } else {
+          ingredientSummary[ingredient.name] = quantity;
         }
-
-        ingredientTotals[ingredientName] += numericAmount;
       });
     });
 
-    return ingredientTotals;
+    return ingredientSummary;
   };
 
-  const filterDrinksByIngredient = (
-    drinks: IDrink[],
-    ingredient: string
-  ): IDrink[] => {
-    return drinks.filter((drink) =>
-      drink.ingredients.some((element) =>
-        element.toLowerCase().includes(ingredient.toLowerCase())
+  function filterDrinksByIngredient(
+    database: IDrink[],
+    ingredientName: string
+  ): IDrink[] {
+    const searchTerm = ingredientName.toLowerCase();
+
+    return database.filter((drink) =>
+      drink.ingredients.some((ingredient) =>
+        ingredient.name.toLowerCase().includes(searchTerm)
       )
     );
-  };
-
-  // const calculateDrinkPrice = (drinks: IDrink[], beverages: IBevarege[]) => {
-  //   return drinks.map((drink) => {
-  //     let totalCost = drink.ingredients.reduce((acc, ingredient) => {
-  //       // Find the beverage that matches the ingredient name
-  //       const beverage  = beverages.find(
-  //         (bev) => bev.name === ingredient
-  //       );
-  //       if (beverage) {
-  //         // Calculate the cost for this ingredient
-  //         acc += (beverage.quantity / beverage.price) * ingredient.quantity;
-  //       }
-  //       return acc;
-  //     }, 0);
-
-  //     return {
-  //       name: drink.name,
-  //       price: totalCost.toFixed(2), // Round to two decimal places
-  //     };
-  //   });
-  // };
+  }
 
   return (
     <DrinkContext.Provider

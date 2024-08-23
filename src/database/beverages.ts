@@ -1,6 +1,6 @@
 import { IBevarege } from "../providers/drinksContext";
 
-export const beverages: IBevarege[] = [
+export const beveragesDatabase: IBevarege[] = [
   {
     name: "Aperol",
     price: 64.3,
@@ -115,5 +115,10 @@ export const beverages: IBevarege[] = [
     name: "Whisky Bourbon",
     price: 108.8,
     quantity: 750,
+  },
+  {
+    name: "Redbull",
+    price: 7.91,
+    quantity: 1,
   },
 ];

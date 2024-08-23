@@ -4,10 +4,7 @@ import { DrinkList } from "../../components/DrinkList";
 import { StyledDrinkList } from "../../styles/DrinkList";
 
 export const AlokoholfreiPage = () => {
-  const { alkoholfreiList, filterDrinksByIngredient } =
-    useContext(DrinkContext);
-
-  // console.log(filterDrinksByIngredient(alkoholfreiList, "Limão"));
+  const { alkoholfreiList } = useContext(DrinkContext);
 
   return (
     <>

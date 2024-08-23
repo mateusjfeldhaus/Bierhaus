@@ -3,7 +3,7 @@ import { IDrink } from "../providers/drinksContext";
 // {
 //   name: "",
 //   type: [""],
-//   ingredients: [""],
+//   ingredients: [{ name: "", quantity: "" }],
 //   recipe: "",
 //   img: [""],
 //   hidden: false,
@@ -14,7 +14,11 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Caipirinha",
     type: ["Cachaça"],
-    ingredients: ["100 mL Cachaça", "50 mL Xarope Simples", "1 Limão"],
+    ingredients: [
+      { name: "Rum", quantity: 40 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Xarope Simples", quantity: 10 },
+    ],
     recipe:
       "Limão cortado em quartos e levemente amassado para remover o suco. Drink batido servido no Copo Rocks sem coagem.",
     img: ["../../assets/Caipirinha-01.jpg", "../../assets/Caipirinha-02.jpg"],
@@ -23,7 +27,14 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Rabo de Galo",
     type: ["Cachaça", "Vermouth", "Licores"],
-    ingredients: ["50 mL Cachaça", "25 mL Vermouth Rosso", "25 mL Cynar"],
+    ingredients: [
+      {
+        name: "Cachaça",
+        quantity: 50,
+      },
+      { name: "Vermouth Rosso", quantity: 25 },
+      { name: "Cynar", quantity: 25 },
+    ],
     recipe:
       "Drink montado servido no Copo Rocks com cubo de gelo grande. Finalizado com zest de Limão.",
     img: [
@@ -36,11 +47,11 @@ export const drinksDatabase: IDrink[] = [
     name: "Brazil 66",
     type: ["Cachaça", "Triple Sec"],
     ingredients: [
-      "75 mL Cachaça",
-      "25 mL Cointreau",
-      "25 mL Suco de Laranja",
-      "25 mL Suco de Limão",
-      "15 mL Xarope Semi-Rich",
+      { name: "Cachaça", quantity: 75 },
+      { name: "Cointreau", quantity: 25 },
+      { name: "Suco de Laranja", quantity: 25 },
+      { name: "Suco de Limão", quantity: 25 },
+      { name: "Xarope Semi-Rich", quantity: 15 },
     ],
     recipe:
       "Drink batido servido no Copo Rocks com simples coagem e cubo de gelo grande. Finalizado com Fatia de Limão.",
@@ -51,11 +62,11 @@ export const drinksDatabase: IDrink[] = [
     name: "Bombeirinho",
     type: ["Cachaça"],
     ingredients: [
-      "50 mL Cachaça",
-      "25 mL Suco de Laranja",
-      "10 mL Suco de Limão Siciliano",
-      "10 mL Suco de Limão",
-      "15 mL Monin Groselha/Fambroesa",
+      { name: "Cachaça", quantity: 50 },
+      { name: "Suco de Laranja", quantity: 25 },
+      { name: "Suco de Limão Siciliano", quantity: 10 },
+      { name: "Suco de Limão", quantity: 10 },
+      { name: "Monin Groselha/Fambroesa", quantity: 15 },
     ],
     recipe:
       "Drink batido servido no Copo Longo com cubos de gelo. Finalizado com rodela de limão.",
@@ -66,7 +77,11 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Aperol Spritz",
     type: ["Espumante", "Licores"],
-    ingredients: ["120 mL Espumante", "120 mL Aperol", "40 mL Água com Gás"],
+    ingredients: [
+      { name: "Espumante", quantity: 120 },
+      { name: "Aperol", quantity: 120 },
+      { name: "Água com Gás", quantity: 40 },
+    ],
     recipe:
       "Drink montado servido na Taça Barone com cubos de gelo. Servir primeiro o espumante e depois o Aperol e a água. Finalizado com 1 fatia de laranja.",
     img: [
@@ -79,10 +94,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Celo Spritz",
     type: ["Espumante", "Licores"],
     ingredients: [
-      "50 mL Limoncello",
-      "25 mL Água com Gás",
-      "20 mL Monin Limão Siciliano",
-      "150 mL Espumante",
+      { name: "Limoncello", quantity: 50 },
+      { name: "Água com Gás", quantity: 25 },
+      { name: "Monin Limão Siciliano", quantity: 20 },
+      { name: "Espumante", quantity: 150 },
     ],
     recipe:
       "Drink Montado servido na Taça Barone com cubos de gelo. Finalizado com fatia de limão siciliano a francesa.",
@@ -93,10 +108,10 @@ export const drinksDatabase: IDrink[] = [
     name: "French 45",
     type: ["Espumante", "Whisky"],
     ingredients: [
-      "60 mL Whisky Bourbon",
-      "30 mL Suco de Limão",
-      "15 mL Xarope Simples",
-      "Completar com Espumante",
+      { name: "Whisky Bourbon", quantity: 60 },
+      { name: "Suco de Limão", quantity: 30 },
+      { name: "Xarope Simples", quantity: 15 },
+      { name: "Espumante", quantity: "Completar" },
     ],
     recipe:
       "Drink batido sem o espumante, com dupla coagem servido na Taça resfriada. Completar volume com Espumante",
@@ -107,10 +122,10 @@ export const drinksDatabase: IDrink[] = [
     name: "French 75",
     type: ["Espumante", "Gin", "Conhaque"],
     ingredients: [
-      "60 mL Gin/Conhaque",
-      "15 mL Suco de Limão",
-      "10 mL Xarope Simples",
-      "90 mL Espumante",
+      { name: "Gin/Conhaque", quantity: 60 },
+      { name: "Suco de Limão", quantity: 15 },
+      { name: "Xarope Simples", quantity: 10 },
+      { name: "Espumante", quantity: 90 },
     ],
     recipe:
       "Drink batido sem o espumante, com dupla coagem servido na Taça Marguerita. Completar com Espumante",
@@ -120,7 +135,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Mimosa",
     type: ["Espumante"],
-    ingredients: ["110 mL Suco de Laranja", "110 mL Espumante"],
+    ingredients: [
+      { name: "Suco de Laranja", quantity: 110 },
+      { name: "Espumante", quantity: 110 },
+    ],
     recipe: "Drink montado em uma Taça de Champanhe resfriada.",
     img: ["../../assets/Mimosa-01.jpg", "../../assets/Mimosa-02.jpg"],
     hidden: false,
@@ -129,12 +147,12 @@ export const drinksDatabase: IDrink[] = [
     name: "Old Cuban",
     type: ["Espumante", "Rum"],
     ingredients: [
-      "Hortelã",
-      "60 mL Rum",
-      "30 mL Suco de Limão",
-      "15 mL Xarope Simples",
-      "2 Dashes de Angostura",
-      "Completar com Espumante",
+      { name: "Hortelã", quantity: 8 },
+      { name: "Rum", quantity: 60 },
+      { name: "Suco de Limão", quantity: 30 },
+      { name: "Xarope Simples", quantity: 15 },
+      { name: "Angostura", quantity: 2 },
+      { name: "Espumante", quantity: "Completar" },
     ],
     recipe:
       "Hortelã levemente macerada. Drink batido sem o espumante, com dupla coagem servido na Taça Marguerita resfriada. Completar com Espumante. Finalizado com casca de limão e folha de hortelã.",
@@ -145,7 +163,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Gin and Tonic",
     type: ["Gin", "Tônica"],
-    ingredients: ["50 mL Gin", "Completar com Tônica"],
+    ingredients: [
+      { name: "Gin", quantity: 50 },
+      { name: "Tônica", quantity: "Completar" },
+    ],
     recipe:
       "Drink Montado servido na Taça Barone com cubos de gelo. Finalizado com zest de laranja, ½ fatia de laranja e ramo de alecrim.",
     img: ["../../assets/Gin Tonica-01.jpg", "../../assets/Gin Tonica-02.jpg"],
@@ -154,7 +175,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Gin e Redbull Sabores",
     type: ["Gin"],
-    ingredients: ["50 mL Gin", "1 Lata de Redbull"],
+    ingredients: [
+      { name: "Gin", quantity: 50 },
+      { name: "Redbull", quantity: 1 },
+    ],
     recipe:
       "Drink montado em uma Taça de Barone com cubos de gelo. Finalizado com Rodela de Laranja.",
     img: ["../../assets/Gin Redbull-01.jpg", "../../assets/Gin Redbull-02.jpg"],
@@ -164,9 +188,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Gin Tropical",
     type: ["Gin"],
     ingredients: [
-      "50 mL Gin",
-      "50 mL Suco de Laranja",
-      "1 Lata de Redbull Tropical",
+      { name: "Gin", quantity: 50 },
+      { name: "Suco de Laranja", quantity: 50 },
+      { name: "Redbull Tropical", quantity: 1 },
     ],
     recipe:
       "Drink montado em uma Taça Barone com cubos de gelo. Finalizado com Rodela de Laranja.",
@@ -179,7 +203,11 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Negroni",
     type: ["Gin", "Licores", "Vermouth"],
-    ingredients: ["50 mL Gin", "50 mL Campari", "50 mL Vermouth Rosso"],
+    ingredients: [
+      { name: "Gin", quantity: 50 },
+      { name: "Campari", quantity: 50 },
+      { name: "Vermouth Rosso", quantity: 50 },
+    ],
     recipe:
       "Drink Mexido com coagem simples servido no Copo Rocks com cubo de gelo grande. Finalizado com fatia de laranja e zest de laranja.",
     img: ["../../assets/Negroni-01.jpg", "../../assets/Negroni-02.jpg"],
@@ -189,10 +217,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Gin Collins",
     type: ["Gin", "Tônica"],
     ingredients: [
-      "50 mL Gin",
-      "20 mL Monin Gengibre",
-      "20 mL Suco de Limão",
-      "Completar com Tônica",
+      { name: "Gin", quantity: 50 },
+      { name: "Monin Gengibre", quantity: 20 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Tônica", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido na Taça Barone com cubos de gelo. Finalizado com rodela de limão e lâmina de gengibre.",
@@ -203,10 +231,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Bramble Black",
     type: ["Gin"],
     ingredients: [
-      "100 mL Gin",
-      "40 mL Suco de Limão",
-      "20 mL Xarope Simples",
-      "20 mL Monin Sabores",
+      { name: "Gin", quantity: 100 },
+      { name: "Suco de Limão", quantity: 40 },
+      { name: "Xarope Simples", quantity: 20 },
+      { name: "Monin Sabores", quantity: 20 },
     ],
     recipe:
       "Drink batido com coagem simples servido no Copo Rocks com cubo de gelo grande.",
@@ -220,10 +248,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Blue Lady",
     type: ["Gin", "Triple Sec"],
     ingredients: [
-      "75 mL Curaçau Blue",
-      "50 mL Gin",
-      "40 mL Suco de Limão Siciliano",
-      "Clara de Ovo",
+      { name: "Curaçau Blue", quantity: 75 },
+      { name: "Gin", quantity: 50 },
+      { name: "Suco de Limão Siciliano", quantity: 40 },
+      { name: "Clara de Ovo", quantity: 1 },
     ],
     recipe:
       "Drink batido duplamente, primeiramente com Dry Shake, com coagem dupla servido na Taça Coupe/Marguerita gelada. Finalizado com zest de laranja.",
@@ -233,7 +261,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Dry Martini",
     type: ["Gin", "Vermouth", "Vodka"],
-    ingredients: ["60 mL Gin/Vodka", "7 mL Dry Vermouth"],
+    ingredients: [
+      { name: "Gin/Vodka", quantity: 60 },
+      { name: "Dry Vermouth", quantity: 7 },
+    ],
     recipe: "Drink mexido com dupla coagem servido na Taça Martini gelada.",
     img: ["../../assets/Dry Martini-01.jpg", "../../assets/Dry Martini-02.jpg"],
     hidden: false,
@@ -242,10 +273,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Fitzgerald",
     type: ["Gin"],
     ingredients: [
-      "120 mL Gin",
-      "50 mL Xarope Simples",
-      "50 mL Suco de Limão Siciliano",
-      "6 Dashes de Angostura",
+      { name: "Gin", quantity: 120 },
+      { name: "Xarope Simples", quantity: 50 },
+      { name: "Suco de Limão Siciliano", quantity: 50 },
+      { name: "Angostura", quantity: 6 },
     ],
     recipe:
       "Drink batido coado duplamente no Copo Rocks com cubo de gelo grande. Finalizado com zest de limão siciliano.",
@@ -256,11 +287,11 @@ export const drinksDatabase: IDrink[] = [
     name: "Bronx",
     type: ["Gin", "Vermmouth"],
     ingredients: [
-      "50 mL Gin",
-      "20 mL Dry Vermouth",
-      "20 mL Vermouth Rosso",
-      "30 mL Suco de Laranja",
-      "3 Dashes de Angostura de Laranja",
+      { name: "Gin", quantity: 50 },
+      { name: "Dry Vermouth", quantity: 20 },
+      { name: "Vermouth Rosso", quantity: 20 },
+      { name: "Suco de Laranja", quantity: 30 },
+      { name: "Angostura de Laranja", quantity: 3 },
     ],
     recipe:
       "Drink batido com dupla coagem, servido na Taça Martini gelada. Finalizado com casca de laranja.",
@@ -271,7 +302,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Carajillo",
     type: ["Licores"],
-    ingredients: ["50 mL Licor 43", "50 mL Café Expresso"],
+    ingredients: [
+      { name: "Licor 43", quantity: 50 },
+      { name: "Café Expresso", quantity: 50 },
+    ],
     recipe:
       "Drink batido com coagem simples servido no Copo Rocks com cubo de gelo grande.",
     img: ["../../assets/Carajillo-01.jpg", "../../assets/Carajillo-02.jpg"],
@@ -280,7 +314,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Folha Experience",
     type: ["Licores"],
-    ingredients: ["100 mL Licor 43", "40 mL Monin Rantcho"],
+    ingredients: [
+      { name: "Licor 43", quantity: 100 },
+      { name: "Monin Rantcho", quantity: 40 },
+    ],
     recipe:
       "Drink batido com coagem simples servido no Copo Rocks com cubo de gelo grande. Finalizado com espuma de limão siciliano e raspas de limão siciliano.",
     img: [
@@ -292,7 +329,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Campari Tonic",
     type: ["Licores", "Tônica"],
-    ingredients: ["70 mL Campari", "210 mL Água Tônica"],
+    ingredients: [
+      { name: "Campari", quantity: 70 },
+      { name: "Água Tônica", quantity: 210 },
+    ],
     recipe:
       "Drink montado servido na Taça Barone com cubos de gelo. Finalizado com fatia de laranja.",
     img: [
@@ -306,9 +346,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Soda Italiana",
     type: ["Não Alcoólicos"],
     ingredients: [
-      "40 mL Monin Sabores",
-      "20 mL Suco de Limão",
-      "Completar Água com Gás",
+      { name: "Monin Sabores", quantity: 40 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido no Copo Longo com cubos de gelo. Finalizado com fatia de limão siciliano a francesa.",
@@ -322,9 +362,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Ice Tea",
     type: ["Não Alcoólicos"],
     ingredients: [
-      "40 mL Monin Sabores",
-      "20 mL Suco de Limão",
-      "Completar Água sem Gás",
+      { name: "Monin Sabores", quantity: 40 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Água sem Gás", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido no Copo Longo com cubos de gelo. Finalizado com fatia de limão siciliano a francesa.",
@@ -335,9 +375,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Pink Lemonade",
     type: ["Não Alcoólicos"],
     ingredients: [
-      "50 mL Monin Grenadine",
-      "20 mL Suco de Limão",
-      "Completar Água com Gás",
+      { name: "Monin Grenadine", quantity: 50 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe: "Drink montado servido no Copo Longo com cubos de gelo.",
     img: [
@@ -351,11 +391,11 @@ export const drinksDatabase: IDrink[] = [
     name: "Mojito",
     type: ["Rum"],
     ingredients: [
-      "60 mL Rum",
-      "30 mL Xarope Simples",
-      "Suco de 1 Limão",
-      "8 Folhas de Hortelã",
-      "Completar com Água com Gás",
+      { name: "Rum", quantity: 60 },
+      { name: "Xarope Simples", quantity: 30 },
+      { name: "Suco de Limão", quantity: 30 },
+      { name: "Hortelã", quantity: 8 },
+      { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe:
       "Hortelã levemente Macerada no shaker. Drink batido sem a água com gás, servido no Copo Longo com cubos de gelo sem coagem. Finalizado com água com gás até o topo e levemente mexido.",
@@ -366,11 +406,11 @@ export const drinksDatabase: IDrink[] = [
     name: "Cold Kiss",
     type: ["Rum", "Vodka"],
     ingredients: [
-      "20 mL Vodka",
-      "50 mL Rum Malibu",
-      "20 mL Monin Menta Glacial",
-      "20 mL Monin Limão Siciliano",
-      "50 mL Água de Coco",
+      { name: "Vodka", quantity: 20 },
+      { name: "Rum Malibu", quantity: 50 },
+      { name: "Monin Menta Glacial", quantity: 20 },
+      { name: "Monin Limão Siciliano", quantity: 20 },
+      { name: "Água de Coco", quantity: 50 },
     ],
     recipe:
       "Drink batido, servido no Copo Longo, com cubos de gelo. Finalizado com espuma de gengibre e ramo de hortelã.",
@@ -381,10 +421,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Piña Colada",
     type: ["Rum"],
     ingredients: [
-      "60 mL Rum",
-      "100 mL Suco de Abacaxi",
-      "50 mL Leite de Coco",
-      "30 mL Leite Condensado",
+      { name: "Rum", quantity: 60 },
+      { name: "Suco de Abacaxi", quantity: 100 },
+      { name: "Leite de Coco", quantity: 50 },
+      { name: "Leite Condensado", quantity: 30 },
     ],
     recipe:
       "Drink batido com simples coagem servido no Copo Longo com cubos de gelo. Finalizado com fatia de abacaxi e cereja.",
@@ -395,10 +435,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Queens Park Swizzle",
     type: ["Rum"],
     ingredients: [
-      "60 mL Rum",
-      "30 mL Xarope Simples",
-      "30 mL Suco de Limão",
-      "2 Dashes Angostura",
+      { name: "Rum", quantity: 60 },
+      { name: "Xarope Simples", quantity: 30 },
+      { name: "Suco de Limão", quantity: 30 },
+      { name: "Angostura", quantity: 2 },
     ],
     recipe:
       "Drink batido, com dupla coagem, servido na Taça Martini resfriada.",
@@ -412,9 +452,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Daiquiri",
     type: ["Rum"],
     ingredients: [
-      "60 mL Rum",
-      "20 mL Suco de Limão Siciliano",
-      "20 mL Xarope Simples",
+      { name: "Rum", quantity: 60 },
+      { name: "Suco de Limão Siciliano", quantity: 20 },
+      { name: "Xarope Simples", quantity: 20 },
     ],
     recipe:
       "Drink batido com dupla coagem servido na Taça Martini gelada. Finalizado com zest de limão siciliano.",
@@ -425,10 +465,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Cointreau Daiquiri",
     type: ["Rum", "Triple Sec"],
     ingredients: [
-      "40 mL Rum",
-      "40 mL Suco de Limão",
-      "20 mL Xarope Simples",
-      "20 mL Cointreau",
+      { name: "Rum", quantity: 40 },
+      { name: "Suco de Limão", quantity: 40 },
+      { name: "Xarope Simples", quantity: 20 },
+      { name: "Cointreau", quantity: 20 },
     ],
     recipe:
       "Drink batido com simples coagem servido no Copo Longo com cubos de gelo. Finalizado com fatia de limão.",
@@ -443,11 +483,11 @@ export const drinksDatabase: IDrink[] = [
     name: "Spicy Dreams",
     type: ["Sake", "Licores"],
     ingredients: [
-      "100 mL Sake",
-      "50 mL Aperol",
-      "60 mL Monin Limão Siciliano",
-      "30 mL Monin Rantcho",
-      "Pimenta Rosa",
+      { name: "Sake", quantity: 100 },
+      { name: "Aperol", quantity: 50 },
+      { name: "Monin Limão Siciliano", quantity: 60 },
+      { name: "Monin Rantcho", quantity: 30 },
+      { name: "Pimenta Rosa", quantity: "Pitada" },
     ],
     recipe:
       "Pimenta Macerada. Drink batido com dupla coagem servido na Taça com cubos de gelo. Finalizado com rodela de limão e pimenta rosa.",
@@ -461,9 +501,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Sakerinha de Maracujá",
     type: ["Sake"],
     ingredients: [
-      "100 mL Sake",
-      "50 mL Xarope Simples",
-      "50 mL Maracujá in Natura",
+      { name: "Sake", quantity: 100 },
+      { name: "Xarope Simples", quantity: 50 },
+      { name: "Maracujá in Natura", quantity: 50 },
     ],
     recipe:
       "Drink batido, com dupla coagem, servido no Copo Rocks com cubo de gelo.",
@@ -477,9 +517,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Japanese Ice Tea",
     type: ["Sake"],
     ingredients: [
-      "50 mL Sake",
-      "20 mL Monin Sabores",
-      "Completar com Água com Gás",
+      { name: "Sake", quantity: 50 },
+      { name: "Monin Sabores", quantity: 20 },
+      { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido no Copo Longo com cubos de gelo. Finalizado com fatia de limão siciliano a francesa.",
@@ -494,9 +534,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Margarita",
     type: ["Tequila", "Triple Sec"],
     ingredients: [
-      "50 mL Tequila Silver",
-      "20 mL Suco de Limão",
-      "25 mL Cointreau",
+      { name: "Tequila Silver", quantity: 50 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Cointreau", quantity: 25 },
     ],
     recipe:
       "Drink batido com dupla coagem servido na Taça Margarita levemente resfriada. Finalizado com borda de sal e fatia de limão na borda.",
@@ -507,10 +547,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Blue Velvet Margarita",
     type: ["Tequila", "Triple Sec"],
     ingredients: [
-      "60 mL Tequila Silver",
-      "30 mL Curaçau Blue",
-      "30 mL Suco de Limão",
-      "15 mL Cointreau",
+      { name: "Tequila Silver", quantity: 60 },
+      { name: "Curaçau Blue", quantity: 30 },
+      { name: "Suco de Limão", quantity: 30 },
+      { name: "Cointreau", quantity: 15 },
     ],
     recipe:
       "Drink batido, com dupla coagem, servido na Taça Margarita levemente resfriada. Finalizado com borda de sal e fatia de limão na borda.",
@@ -524,9 +564,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Teqroni",
     type: ["Tequila", "Campari", "Vermouth"],
     ingredients: [
-      "50 mL Tequila Silver",
-      "50 mL Campari",
-      "50 mL Vermouth Rosso",
+      { name: "Tequila Silver", quantity: 50 },
+      { name: "Campari", quantity: 50 },
+      { name: "Vermouth Rosso", quantity: 50 },
     ],
     recipe:
       "Drink Mexido com coagem simples, servido no Copo Rocks, com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
@@ -537,14 +577,14 @@ export const drinksDatabase: IDrink[] = [
     name: "Long Island Ice Tea",
     type: ["Tequila", "Gin", "Vodka", "Rum", "Triple Sec"],
     ingredients: [
-      "10 mL Tequila Silver",
-      "10 mL Gin",
-      "10 mL Vodka",
-      "10 mL Rum",
-      "10 mL Cointreau",
-      "15 mL Xarope Simples",
-      "15 mL Suco de Limão",
-      "Completar com Coca-Cola",
+      { name: "Tequila Silver", quantity: 10 },
+      { name: "Gin", quantity: 10 },
+      { name: "Vodka", quantity: 10 },
+      { name: "Rum", quantity: 10 },
+      { name: "Cointreau", quantity: 10 },
+      { name: "Xarope Simples", quantity: 15 },
+      { name: "Suco de Limão", quantity: 15 },
+      { name: "Coca-Cola", quantity: "Completar" },
     ],
     recipe:
       "Drink batido, com simples coagem, servido em Copo Longo, com cubos de gelo.",
@@ -558,9 +598,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Tequila Sunrise",
     type: ["Tequila"],
     ingredients: [
-      "50 mL Tequila Silver",
-      "10 mL Grenadine",
-      "Completar com Suco de Laranja",
+      { name: "Tequila Silver", quantity: 50 },
+      { name: "Grenadine", quantity: 10 },
+      { name: "Suco de Laranja", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido no Copo Longo com cubos de gelo. Finalizado com fatia de laranja e cereja.",
@@ -574,9 +614,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Matador",
     type: ["Tequila"],
     ingredients: [
-      "50 mL Tequila Silver",
-      "100 mL Suco de Abacaxi",
-      "20 mL Suco de Limão",
+      { name: "Tequila Silver", quantity: 50 },
+      { name: "Suco de Abacaxi", quantity: 100 },
+      { name: "Suco de Limão", quantity: 20 },
     ],
     recipe:
       "Drink batido com coagem simples servido na Taça Margarita levemente resfriada.",
@@ -587,10 +627,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Mexican Mule",
     type: ["Tequila"],
     ingredients: [
-      "50 mL Tequila Silver",
-      "25 mL Suco de Limão",
-      "15 mL Monin Gengibre",
-      "Completar com Água com Gás",
+      { name: "Tequila Silver", quantity: 50 },
+      { name: "Suco de Limão", quantity: 25 },
+      { name: "Monin Gengibre", quantity: 15 },
+      { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido no Copo Moscow Mule com cubos de gelo. Finalizado com rodela de limão.",
@@ -605,10 +645,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Moscow Mule",
     type: ["Vodka"],
     ingredients: [
-      "50 mL Vodka",
-      "40 mL Suco de Limão",
-      "30 mL Monin Gengibre",
-      "20 mL Xarope Simples",
+      { name: "Vodka", quantity: 50 },
+      { name: "Suco de Limão", quantity: 40 },
+      { name: "Monin Gengibre", quantity: 30 },
+      { name: "Xarope Simples", quantity: 20 },
     ],
     recipe:
       "Drink batido servido no Copo Moscow Mule com coagem simples e cubo de gelo grande. Finalizado com espuma de gengibre e raspas de limão.",
@@ -619,9 +659,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Vodka Soda",
     type: ["Vodka"],
     ingredients: [
-      "50 mL Vodka",
-      "15 mL Suco de Limão",
-      "Completar com Água com Gás",
+      { name: "Vodka", quantity: 50 },
+      { name: "Suco de Limão", quantity: 15 },
+      { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe:
       "Drink montado em um Copo Rocks, com cubo de gelo grande. Finalizado com 2 rodelas de limão.",
@@ -631,7 +671,11 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Espresso Martini",
     type: ["Vodka", "Licores"],
-    ingredients: ["50 mL Vodka", "30 mL Licor Kahluá", "50 mL Café Expresso"],
+    ingredients: [
+      { name: "Vodka", quantity: 50 },
+      { name: "Licor Kahluá", quantity: 30 },
+      { name: "Café Expresso", quantity: 50 },
+    ],
     recipe: "Drink batido, servido na Taça Martini gelada, com dupla coagem.",
     img: [
       "../../assets/Espresso Martini-01.jpg",
@@ -643,10 +687,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Lagoa Azul",
     type: ["Vodka", "Triple Sec"],
     ingredients: [
-      "50 mL Vodka",
-      "30 mL Curaçau Blue",
-      "20 mL Suco de Limão",
-      "Completar com Club Soda",
+      { name: "Vodka", quantity: 50 },
+      { name: "Curaçau Blue", quantity: 30 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Club Soda", quantity: "Completar" },
     ],
     recipe:
       "Drink montado, servido no Copo Longo, com cubos de gelo. Finalizado com rodela de laranja.",
@@ -657,9 +701,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Sex on the Beach",
     type: ["Vodka"],
     ingredients: [
-      "50 mL Vodka",
-      "20 mL Licor de Pêssego",
-      "Completar com Suco de Laranja e Cranberry",
+      { name: "Vodka", quantity: 50 },
+      { name: "Licor de Pêssego", quantity: 20 },
+      { name: "Suco de Laranja e Cranberry", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido no Copo Longo com cubos de gelo. Finalizado com fatia de laranja.",
@@ -672,7 +716,10 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Black Russian",
     type: ["Vodka"],
-    ingredients: ["50 mL Vodka", "20 mL Licor de Café"],
+    ingredients: [
+      { name: "Vodka", quantity: 50 },
+      { name: "Licor de Café", quantity: 20 },
+    ],
     recipe:
       "Drink montado servido no Copo Rocks com cubo de gelo grande. Finalizado com zest de limão siciliano.",
     img: [
@@ -684,7 +731,11 @@ export const drinksDatabase: IDrink[] = [
   {
     name: "Lemon Drop",
     type: ["Vodka"],
-    ingredients: ["50 mL Vodka", "20 mL Suco de Limão", "20 mL Xarope Simples"],
+    ingredients: [
+      { name: "Vodka", quantity: 50 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Xarope Simples", quantity: 20 },
+    ],
     recipe:
       "Drink batido servido na Taça Martini levemente resfriada. Finalizado com zest de limão.",
     img: ["../../assets/Lemon Drop-01.jpg", "../../assets/Lemon Drop-02.jpg"],
@@ -694,10 +745,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Cosmopolitan",
     type: ["Vodka", "Triple Sec"],
     ingredients: [
-      "40 mL Vodka",
-      "30 mL Cointreau",
-      "20 mL Suco de Limão",
-      "20 mL Suco de Cranberry",
+      { name: "Vodka", quantity: 40 },
+      { name: "Cointreau", quantity: 30 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Suco de Cranberry", quantity: 20 },
     ],
     recipe:
       "Drink batido com dupla coagem servido na Taça Martini levemente resfriada. Finalizado com zest de limão siciliano.",
@@ -712,9 +763,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Old Fashioned",
     type: ["Whisky"],
     ingredients: [
-      "50 mL Whisky Bourbon",
-      "5 mL Xarope Simples",
-      "3 Dashes de Angostura",
+      { name: "Whisky Bourbon", quantity: 50 },
+      { name: "Xarope Simples", quantity: 5 },
+      { name: "Angostura", quantity: 3 },
     ],
     recipe:
       "Drink mexido servido no Copo Rocks com cubo de gelo grande. Finalizado com zest de laranja.",
@@ -728,9 +779,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Manhattan",
     type: ["Whisky", "Vermouth"],
     ingredients: [
-      "100 mL Whisky Bourbon",
-      "40 mL Vermouth Rosso",
-      "6 Dashes de Angostura",
+      { name: "Whisky Bourbon", quantity: 100 },
+      { name: "Vermouth Rosso", quantity: 40 },
+      { name: "Angostura", quantity: 6 },
     ],
     recipe:
       "Drink mexido servido na Taça Coupe levemente resfriada. Finalizado com cereja.",
@@ -741,10 +792,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Whisky Sour",
     type: ["Whisky"],
     ingredients: [
-      "50 mL Whisky Bourbon",
-      "20 mL Suco de Limão",
-      "15 mL Xarope Simples",
-      "Clara de Ovo",
+      { name: "Whisky Bourbon", quantity: 50 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Xarope Simples", quantity: 15 },
+      { name: "Clara de Ovo", quantity: 1 },
     ],
     recipe:
       "Drink batido servido no Copo Rocks com dupla coagem e cubo de gelo grande. Finalizado com zest de limão.",
@@ -755,9 +806,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Mint Julep",
     type: ["Whisky"],
     ingredients: [
-      "50 mL Whisky Bourbon",
-      "10 Folhas de Hortelã",
-      "15 mL Xarope Simples",
+      { name: "Whisky Bourbon", quantity: 50 },
+      { name: "Hortelã", quantity: 10 },
+      { name: "Xarope Simples", quantity: 15 },
     ],
     recipe:
       "Hortelã levemente macerada. Drink montado servido no Copo Julep com gelo triturado. Finalizado com ramo de hortelã.",
@@ -768,9 +819,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Boulevardier",
     type: ["Whisky", "Licores", "Vermouth"],
     ingredients: [
-      "50 mL Whisky Bourbon",
-      "50 mL Campari",
-      "50 mL Vermouth Rosso",
+      { name: "Whisky Bourbon", quantity: 50 },
+      { name: "Campari", quantity: 50 },
+      { name: "Vermouth Rosso", quantity: 50 },
     ],
     recipe:
       "Drink mexido servido no Copo Rocks com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
@@ -784,10 +835,10 @@ export const drinksDatabase: IDrink[] = [
     name: "John Collins",
     type: ["Whisky"],
     ingredients: [
-      "50 mL Whisky Bourbon",
-      "20 mL Suco de Limão",
-      "20 mL Xarope Simples",
-      "Completar com Club Soda",
+      { name: "Whisky Bourbon", quantity: 50 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Xarope Simples", quantity: 20 },
+      { name: "Club Soda", quantity: "Completar" },
     ],
     recipe:
       "Drink montado servido no Copo Longo com cubos de gelo. Finalizado com fatia de limão.",
@@ -801,11 +852,11 @@ export const drinksDatabase: IDrink[] = [
     name: "Tratto Limoncello",
     type: ["Whisky", "Licores", "Vermouth"],
     ingredients: [
-      "45 mL Whisky Bourbon",
-      "45 mL Limoncello",
-      "15 mL Dry Vermouth",
-      "1 Dash Angostura",
-      "1 Dash Bitter de Laranja",
+      { name: "Whisky Bourbon", quantity: 45 },
+      { name: "Limoncello", quantity: 45 },
+      { name: "Dry Vermouth", quantity: 15 },
+      { name: "Angostura", quantity: "1 Dash" },
+      { name: "Bitter de Laranja", quantity: 1 },
     ],
     recipe:
       "Drink mexido servido no Copo Rocks com cubo de gelo grande. Finalizado com Casca de Laranja",
