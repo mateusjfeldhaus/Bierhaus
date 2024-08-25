@@ -3,12 +3,18 @@ import { IBevarege } from "../providers/drinksContext";
 export const beveragesDatabase: IBevarege[] = [
   // Xaropes
   { name: "Xarope Simples", price: 1.65, quantity: 300 },
-  { name: "Xarope Semi-Rich", price: 1.65, quantity: 300 },
+  { name: "Xarope Semi-Rich", price: 1.85, quantity: 300 },
+  { name: "Xarope Rich", price: 2.0, quantity: 300 },
   // Sucos
   {
     name: "Suco de Limão",
     price: 0.41,
     quantity: 35,
+  },
+  {
+    name: "Limão",
+    price: 0.41,
+    quantity: 1,
   },
   { name: "Suco de Limão Siciliano", price: 0.41, quantity: 35.0 },
   { name: "Suco de Laranja", price: 2.82, quantity: 200.0 },
@@ -47,12 +53,12 @@ export const beveragesDatabase: IBevarege[] = [
     price: 3.99,
     quantity: 350,
   },
+  { name: "Tônica", price: 3.99, quantity: 350 },
   {
     name: "Club Soda",
     price: 4.82,
     quantity: 350,
   },
-  { name: "Tônica", price: 3.99, quantity: 350 },
   { name: "Água de Coco", price: 3.45, quantity: 200 },
   // Monin
   {
@@ -96,11 +102,6 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 250,
   },
   // Diversos
-  {
-    name: "Limão",
-    price: 0.41,
-    quantity: 1,
-  },
   { name: "Hortelã", price: 2.99, quantity: 1000 },
   { name: "Clara de Ovo", price: 0.6, quantity: 1 },
   { name: "Pimenta Rosa", price: 0.41, quantity: 1 },
@@ -179,9 +180,19 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 980,
   },
   {
+    name: "Rum Bacardi",
+    price: 56.9,
+    quantity: 980,
+  },
+  {
     name: "Rum Malibu",
     price: 55.57,
     quantity: 750,
+  },
+  {
+    name: "Rum Montilla",
+    price: 38.21,
+    quantity: 1000,
   },
   // Cachaça
   {
@@ -189,18 +200,54 @@ export const beveragesDatabase: IBevarege[] = [
     price: 52.5,
     quantity: 1000,
   },
+  {
+    name: "Cachaça Seleta",
+    price: 52.5,
+    quantity: 1000,
+  },
+  {
+    name: "Cachaça 51",
+    price: 0.0,
+    quantity: 965,
+  },
+  {
+    name: "Cachaça Velho Barreiro",
+    price: 17.1,
+    quantity: 910,
+  },
   // Espumante
   {
     name: "Espumante",
     price: 17.9,
     quantity: 187.0,
   },
+  // Gin
   {
     name: "Gin",
     price: 150.0,
     quantity: 750,
   },
-  // Gin
+  {
+    name: "Gin Beefeater 24",
+    price: 150.0,
+    quantity: 750,
+  },
+  {
+    name: "Gin Beefeater",
+    price: 150.0,
+    quantity: 750,
+  },
+  {
+    name: "Gin Tanqueray",
+    price: 150.0,
+    quantity: 750,
+  },
+  {
+    name: "Gin Bulldog",
+    price: 150.0,
+    quantity: 750,
+  },
+  // Sake
   {
     name: "Sake",
     price: 49.9,
@@ -218,9 +265,29 @@ export const beveragesDatabase: IBevarege[] = [
     price: 98.99,
     quantity: 1000,
   },
+  {
+    name: "Absolut Vodka",
+    price: 98.99,
+    quantity: 1000,
+  },
+  {
+    name: "Vodka Grey Goose",
+    price: 98.99,
+    quantity: 1000,
+  },
+  {
+    name: "Vodka Belvedere",
+    price: 98.99,
+    quantity: 1000,
+  },
   // Whisky
   {
     name: "Whisky Bourbon",
+    price: 108.8,
+    quantity: 750,
+  },
+  {
+    name: "Jack Daniels",
     price: 108.8,
     quantity: 750,
   },

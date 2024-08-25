@@ -20,14 +20,14 @@ export const DrinkCard = ({ drinks }: { drinks: IDrink[] }) => {
                   return `Completar com ${ingredient.name}`;
                 } else if (ingredient.name === "Angostura") {
                   return `${ingredient.quantity} dashes de ${ingredient.name}`;
+                } else if (ingredient.name === "Angostura de Laranja") {
+                  return `${ingredient.quantity} dashes de ${ingredient.name}`;
                 } else if (ingredient.name.includes("Redbull")) {
                   return `${ingredient.quantity} Lata de ${ingredient.name}`;
                 } else if (ingredient.name === "Clara de Ovo") {
                   return `${ingredient.quantity} ${ingredient.name}`;
                 } else if (ingredient.name === "Pimenta Rosa") {
                   return `${ingredient.quantity} de ${ingredient.name}`;
-                } else if (ingredient.name === "Bitter de Laranja") {
-                  return `${ingredient.quantity} dashes de ${ingredient.name}`;
                 } else if (ingredient.name === "Limão") {
                   return `Suco de ${ingredient.quantity} ${ingredient.name}`;
                 } else {

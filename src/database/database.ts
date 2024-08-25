@@ -355,6 +355,7 @@ export const drinksDatabase: IDrink[] = [
     img: [
       "../../assets/Soda Italiana-01.jpg",
       "../../assets/Soda Italiana-02.jpg",
+      "../../assets/Soda Italiana-03.jpg",
     ],
     hidden: false,
   },
@@ -508,8 +509,8 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido, com dupla coagem, servido no Copo Rocks com cubo de gelo.",
     img: [
-      "../../assets/Maracuja com Sake-01.jpg",
-      "../../assets/Maracuja com Sake-02.jpg",
+      "../../assets/Sakerinha de Maracuja-01.jpg",
+      "../../assets/Sakerinha de Maracuja-02.jpg",
     ],
     hidden: false,
   },
