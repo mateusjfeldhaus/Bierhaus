@@ -850,6 +850,22 @@ export const drinksDatabase: IDrink[] = [
     hidden: false,
   },
   {
+    name: "Johnnie Highball",
+    type: ["Whisky"],
+    ingredients: [
+      { name: "Whisky", quantity: 40 },
+      { name: "Água de Coco", quantity: 40 },
+      { name: "Tônica", quantity: "Completar" },
+    ],
+    recipe:
+      "Drink Montado, em um Copo Longo, com cubos de gelo. Finalizado com fatia de Limão.",
+    img: [
+      "../../assets/Johnnie Highball-01.jpg",
+      "../../assets/Johnnie Highball-02.jpg",
+    ],
+    hidden: false,
+  },
+  {
     name: "Tratto Limoncello",
     type: ["Whisky", "Licores", "Vermouth"],
     ingredients: [
