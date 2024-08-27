@@ -282,6 +282,11 @@ export const beveragesDatabase: IBevarege[] = [
   },
   // Whisky
   {
+    name: "Whisky",
+    price: 108.8,
+    quantity: 750,
+  },
+  {
     name: "Whisky Bourbon",
     price: 108.8,
     quantity: 750,
