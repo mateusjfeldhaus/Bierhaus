@@ -106,7 +106,7 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
     const ingredientSummary: Record<string, number> = {};
 
     function parseQuantity(quantity: number | string): number {
-      return typeof quantity === "string" ? parseFloat(quantity) : quantity;
+      return typeof quantity === "string" ? 1 : quantity;
     }
 
     database.forEach((drink) => {

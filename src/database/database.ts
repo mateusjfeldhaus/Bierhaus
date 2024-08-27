@@ -571,7 +571,7 @@ export const drinksDatabase: IDrink[] = [
     ],
     recipe:
       "Drink Mexido com coagem simples, servido no Copo Rocks, com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
-    img: [""],
+    img: ["../../assets/Teqroni-01.jpg", "../../assets/Teqroni-02.jpg"],
     hidden: false,
   },
   {
