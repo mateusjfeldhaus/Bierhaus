@@ -16,7 +16,9 @@ export const HomePage = () => {
   // console.log(sumOfIngredients(drinksDatabase));
 
   // console.log(filterDrinksByIngredient(drinksDatabase, "limão"));
+  // console.log(filterDrinksByIngredient(drinksDatabase, "monin"));
   // console.log(filterDrinksByIngredient(drinksDatabase, "Dry Vermouth"));
+  // console.log(filterDrinksByIngredient(drinksDatabase, "Água de Coco"));
 
   // console.log(
   //   costPerDrink(drinksDatabase, beveragesDatabase, "tratto limoncello")

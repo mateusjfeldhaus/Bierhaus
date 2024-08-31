@@ -19,6 +19,7 @@ export interface IBevarege {
   name: string;
   price: number;
   quantity: number;
+  dateOfPurchase: string;
 }
 
 export interface IDrinkProviderProps {
