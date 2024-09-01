@@ -306,9 +306,9 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Gin Tanqueray",
-    price: 150.0,
+    price: 97.01,
     quantity: 750,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-01",
   },
   {
     name: "Gin Bulldog",
