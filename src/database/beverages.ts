@@ -135,9 +135,9 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Grenadine",
-    price: 29.9,
-    quantity: 250,
-    dateOfPurchase: "",
+    price: 49.9,
+    quantity: 700,
+    dateOfPurchase: "2024-09-02",
   },
   // Diversos
   { name: "Hortelã", price: 2.99, quantity: 1000, dateOfPurchase: "" },
