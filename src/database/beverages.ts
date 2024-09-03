@@ -87,9 +87,9 @@ export const beveragesDatabase: IBevarege[] = [
   // Monin
   {
     name: "Monin Gengibre",
-    price: 49.9,
+    price: 42.92,
     quantity: 700,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-02-13",
   },
   {
     name: "Monin Limão Siciliano",
@@ -99,15 +99,15 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Monin Menta Glacial",
-    price: 54.99,
+    price: 49.9,
     quantity: 700,
-    dateOfPurchase: "",
+    dateOfPurchase: "2023-11-22",
   },
   {
     name: "Monin Rantcho",
-    price: 49.49,
+    price: 54.9,
     quantity: 700,
-    dateOfPurchase: "",
+    dateOfPurchase: "2023-11-26",
   },
   {
     name: "Monin Sabores",
@@ -151,6 +151,12 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 1000,
     dateOfPurchase: "",
   },
+  {
+    name: "Ginger Beer",
+    price: 3.43,
+    quantity: 270,
+    dateOfPurchase: "2024-02-13",
+  },
   { name: "Café Expresso", price: 1.69, quantity: 50, dateOfPurchase: "" },
   { name: "Coca-Cola", price: 1.79, quantity: 200, dateOfPurchase: "" },
   { name: "Leite de Coco", price: 5.94, quantity: 200, dateOfPurchase: "" },
@@ -164,21 +170,27 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Campari",
-    price: 67.8,
+    price: 51.6,
     quantity: 998,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-02-13",
   },
   {
     name: "Dry Vermouth",
-    price: 31.9,
+    price: 45.9,
     quantity: 750,
-    dateOfPurchase: "",
+    dateOfPurchase: "2023-11-30",
+  },
+  {
+    name: "Vermouth Cinzano Rosso",
+    price: 37.9,
+    quantity: 1000,
+    dateOfPurchase: "2024-04-12",
   },
   {
     name: "Vermouth Rosso",
-    price: 51.9,
+    price: 37.9,
     quantity: 1000,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-04-12",
   },
   {
     name: "Vermouth Cinzano 1757",
@@ -206,15 +218,15 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Cynar",
-    price: 20.9,
+    price: 26.99,
     quantity: 900,
-    dateOfPurchase: "",
+    dateOfPurchase: "2023-11-30",
   },
   {
     name: "Licor 43",
-    price: 129.0,
+    price: 141.77,
     quantity: 700,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-07-06",
   },
   {
     name: "Licor Kahluá",
@@ -243,9 +255,9 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Rum Bacardi",
-    price: 56.9,
+    price: 58.99,
     quantity: 980,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-04-12",
   },
   {
     name: "Rum Malibu",
@@ -268,9 +280,9 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Cachaça Seleta",
-    price: 52.5,
+    price: 47.31,
     quantity: 1000,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-02-13",
   },
   {
     name: "Cachaça 51",
@@ -306,9 +318,9 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Gin Beefeater",
-    price: 150.0,
+    price: 78.9,
     quantity: 750,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-08-03",
   },
   {
     name: "Gin Tanqueray",
@@ -318,9 +330,9 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Gin Bulldog",
-    price: 150.0,
+    price: 118.27,
     quantity: 750,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-04-12",
   },
   // Sake
   {
