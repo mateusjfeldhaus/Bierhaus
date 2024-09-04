@@ -1,11 +1,12 @@
 import { IBevarege } from "../providers/drinksContext";
 
 export const beveragesDatabase: IBevarege[] = [
-  // Xaropes
+  //#region XAROPES
   { name: "Xarope Simples", price: 1.65, quantity: 300, dateOfPurchase: "" },
   { name: "Xarope Semi-Rich", price: 1.85, quantity: 300, dateOfPurchase: "" },
   { name: "Xarope Rich", price: 2.0, quantity: 300, dateOfPurchase: "" },
-  // Sucos
+  //#endregion
+  //#region SUCOS
   {
     name: "Suco de Limão",
     price: 0.41,
@@ -38,7 +39,8 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 200.0,
     dateOfPurchase: "",
   },
-  // Redbull
+  //#endregion
+  //#region REDBULL
   {
     name: "Redbull",
     price: 7.91,
@@ -57,7 +59,8 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 1,
     dateOfPurchase: "",
   },
-  // Águas
+  //#endregion
+  //#region ÁGUAS
   {
     name: "Água com Gás",
     price: 1.9,
@@ -84,7 +87,8 @@ export const beveragesDatabase: IBevarege[] = [
     dateOfPurchase: "",
   },
   { name: "Água de Coco", price: 3.45, quantity: 200, dateOfPurchase: "" },
-  // Monin
+  //#endregion
+  //#region MONIN
   {
     name: "Monin Gengibre",
     price: 42.92,
@@ -139,7 +143,8 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 700,
     dateOfPurchase: "2024-09-02",
   },
-  // Diversos
+  //#endregion
+  //#region DIVERSOS
   { name: "Hortelã", price: 2.99, quantity: 1000, dateOfPurchase: "" },
   { name: "Clara de Ovo", price: 0.6, quantity: 1, dateOfPurchase: "" },
   { name: "Pimenta Rosa", price: 0.41, quantity: 1, dateOfPurchase: "" },
@@ -161,7 +166,8 @@ export const beveragesDatabase: IBevarege[] = [
   { name: "Coca-Cola", price: 1.79, quantity: 200, dateOfPurchase: "" },
   { name: "Leite de Coco", price: 5.94, quantity: 200, dateOfPurchase: "" },
   { name: "Leite Condensado", price: 4.99, quantity: 395, dateOfPurchase: "" },
-  // Licores
+  //#endregion
+  //#region LICORES
   {
     name: "Aperol",
     price: 64.3,
@@ -246,7 +252,8 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 700,
     dateOfPurchase: "",
   },
-  // Rum
+  //#endregion
+  //#region RUM
   {
     name: "Rum",
     price: 56.9,
@@ -271,7 +278,8 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 1000,
     dateOfPurchase: "",
   },
-  // Cachaça
+  //#endregion
+  //#region CACHAÇA
   {
     name: "Cachaça",
     price: 52.5,
@@ -296,14 +304,16 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 910,
     dateOfPurchase: "",
   },
-  // Espumante
+  //#endregion
+  //#region ESPUMANTE
   {
     name: "Espumante",
     price: 17.9,
     quantity: 187.0,
     dateOfPurchase: "",
   },
-  // Gin
+  //#endregion
+  //#region GIN
   {
     name: "Gin",
     price: 150.0,
@@ -334,21 +344,24 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 750,
     dateOfPurchase: "2024-04-12",
   },
-  // Sake
+  //#endregion
+  //#region SAKE
   {
     name: "Sake",
     price: 49.9,
     quantity: 740,
     dateOfPurchase: "",
   },
-  // Tequila
+  //#endregion
+  //#region TEQUILA
   {
     name: "Tequila Silver",
     price: 105.48,
     quantity: 750,
     dateOfPurchase: "",
   },
-  // Vodka
+  //#endregion
+  //#region VODKA
   {
     name: "Vodka",
     price: 98.99,
@@ -373,7 +386,8 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 1000,
     dateOfPurchase: "",
   },
-  // Whisky
+  //#endregion
+  //#region WHISKY
   {
     name: "Whisky",
     price: 108.8,
@@ -392,7 +406,9 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 750,
     dateOfPurchase: "",
   },
-  // Mistos
+  //#endregion
+  //#region MISTOS
   { name: "Gin/Conhaque", price: 150.0, quantity: 750, dateOfPurchase: "" },
   { name: "Gin/Vodka", price: 150.0, quantity: 750, dateOfPurchase: "" },
+  //#endregion
 ];

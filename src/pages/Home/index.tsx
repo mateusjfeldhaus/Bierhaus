@@ -24,6 +24,9 @@ export const HomePage = () => {
   //   costPerDrink(drinksDatabase, beveragesDatabase, "tratto limoncello")
   // );
   // console.log(costPerDrink(drinksDatabase, beveragesDatabase, "negroni"));
+  // console.log(
+  //   costPerDrink(drinksDatabase, beveragesDatabase, "Japanese Ice Tea")
+  // );
 
   // console.log(getAllDrinksPrices(drinksDatabase, beveragesDatabase));
 
