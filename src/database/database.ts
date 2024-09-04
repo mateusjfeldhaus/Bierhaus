@@ -242,7 +242,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Bramble Black-01.jpg",
       "../../assets/Bramble Black-02.jpg",
     ],
-    hidden: true,
+    hidden: false,
   },
   {
     name: "Blue Lady",
@@ -296,7 +296,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido com dupla coagem, servido na Taça Martini gelada. Finalizado com casca de laranja.",
     img: ["../../assets/Bronx-01.jpg", "../../assets/Bronx-02.jpg"],
-    hidden: true,
+    hidden: false,
   },
   // Licores
   {
@@ -385,7 +385,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Pink Lemonade-01.jpg",
       "../../assets/Pink Lemonade-02.jpg",
     ],
-    hidden: true,
+    hidden: false,
   },
   // Rum
   {
