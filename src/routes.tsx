@@ -11,6 +11,7 @@ import { TequilaPage } from "./pages/TequilaPage";
 import { VodkaPage } from "./pages/VodkaPage";
 import { WhiskyPage } from "./pages/WhiskyPage";
 import { NotFound } from "./pages/404NotFound";
+import { UtilsPage } from "./pages/UtilsPage";
 
 export const Router = () => {
   return (
@@ -26,6 +27,7 @@ export const Router = () => {
       <Route path="/tequila" element={<TequilaPage />} />
       <Route path="/vodka" element={<VodkaPage />} />
       <Route path="/whisky" element={<WhiskyPage />} />
+      <Route path="/utils" element={<UtilsPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

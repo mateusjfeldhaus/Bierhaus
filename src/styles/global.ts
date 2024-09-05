@@ -56,4 +56,12 @@ dialog{
     display: unset;
     position: unset;
   }
+
+input::placeholder {
+	color: inherit
+}
+
+input:focus {
+    outline: none;
+  } 
 `;

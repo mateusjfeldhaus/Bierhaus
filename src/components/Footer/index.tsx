@@ -17,6 +17,7 @@ export const Footer = () => {
     { path: "/tequila", label: "Tequila" },
     { path: "/vodka", label: "Vodka" },
     { path: "/whisky", label: "Whisky" },
+    { path: "/utils", label: "Utils" },
   ];
 
   const currentIndex = menuItems.findIndex(

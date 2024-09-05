@@ -128,11 +128,14 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
     database: IDrink[],
     ingredientName: string
   ): IDrink[] => {
-    const searchTerm = ingredientName.toLowerCase();
+    function removeAccents(str: string): string {
+      return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+    const searchTerm = removeAccents(ingredientName.toLowerCase());
 
     return database.filter((drink) =>
       drink.ingredients.some((ingredient) =>
-        ingredient.name.toLowerCase().includes(searchTerm)
+        removeAccents(ingredient.name.toLowerCase()).includes(searchTerm)
       )
     );
   };
