@@ -1,5 +1,6 @@
 import { IDrink } from "../providers/drinksContext";
 
+// #region MODELO BASE PARA NOVO DRINK
 // {
 //   name: "",
 //   type: [""],
@@ -8,6 +9,7 @@ import { IDrink } from "../providers/drinksContext";
 //   img: [""],
 //   hidden: false,
 // },
+// #endregion
 
 export const drinksDatabase: IDrink[] = [
   // #region Cachaça
