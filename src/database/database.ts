@@ -10,7 +10,7 @@ import { IDrink } from "../providers/drinksContext";
 // },
 
 export const drinksDatabase: IDrink[] = [
-  // Cachaça
+  // #region Cachaça
   {
     name: "Caipirinha",
     type: ["Cachaça"],
@@ -73,7 +73,8 @@ export const drinksDatabase: IDrink[] = [
     img: ["../../assets/Bombeirinho-01.jpg", "../../assets/Bombeirinho-02.jpg"],
     hidden: true,
   },
-  // Espumante
+  // #endregion
+  // #region Espumante
   {
     name: "Aperol Spritz",
     type: ["Espumante", "Licores"],
@@ -159,7 +160,8 @@ export const drinksDatabase: IDrink[] = [
     img: ["../../assets/Old Cuban-01.jpg", "../../assets/Old Cuban-02.jpg"],
     hidden: false,
   },
-  // Gin
+  // #endregion
+  // #region Gin
   {
     name: "Gin and Tonic",
     type: ["Gin", "Tônica"],
@@ -180,7 +182,7 @@ export const drinksDatabase: IDrink[] = [
       { name: "Redbull", quantity: 1 },
     ],
     recipe:
-      "Drink montado em uma Taça de Barone com cubos de gelo. Finalizado com Rodela de Laranja.",
+      "Drink montado em uma Taça Barone com cubos de gelo. Finalizado com Rodela de Laranja.",
     img: ["../../assets/Gin Redbull-01.jpg", "../../assets/Gin Redbull-02.jpg"],
     hidden: false,
   },
@@ -298,7 +300,8 @@ export const drinksDatabase: IDrink[] = [
     img: ["../../assets/Bronx-01.jpg", "../../assets/Bronx-02.jpg"],
     hidden: false,
   },
-  // Licores
+  // #endregion
+  // #region Licores
   {
     name: "Carajillo",
     type: ["Licores"],
@@ -341,7 +344,8 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-  // Não Alcoólicos
+  // #endregion
+  // #region Alkoholfrei
   {
     name: "Soda Italiana",
     type: ["Não Alcoólicos"],
@@ -387,7 +391,8 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-  // Rum
+  // #endregion
+  // #region Rum
   {
     name: "Mojito",
     type: ["Rum"],
@@ -479,7 +484,8 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-  // Sake
+  // #endregion
+  // #region Sake
   {
     name: "Spicy Dreams",
     type: ["Sake", "Licores"],
@@ -530,7 +536,8 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-  // Tequila
+  // #endregion
+  // #region Tequila
   {
     name: "Margarita",
     type: ["Tequila", "Triple Sec"],
@@ -641,7 +648,8 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-  // Vodka
+  // #endregion
+  // #region Vodka
   {
     name: "Moscow Mule",
     type: ["Vodka"],
@@ -704,7 +712,8 @@ export const drinksDatabase: IDrink[] = [
     ingredients: [
       { name: "Vodka", quantity: 50 },
       { name: "Licor de Pêssego", quantity: 20 },
-      { name: "Suco de Laranja e Cranberry", quantity: "Completar" },
+      { name: "Suco de Laranja", quantity: 60 },
+      { name: "Suco de Cranberry", quantity: 60 },
     ],
     recipe:
       "Drink montado servido no Copo Longo com cubos de gelo. Finalizado com fatia de laranja.",
@@ -759,7 +768,8 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-  // Whisky
+  // #endregion
+  // #region Whisky
   {
     name: "Old Fashioned",
     type: ["Whisky"],
@@ -883,4 +893,5 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
+  // #endregion
 ];
