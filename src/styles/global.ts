@@ -64,4 +64,10 @@ input::placeholder {
 input:focus {
     outline: none;
   } 
+  body {
+	/* background-color: ; */
+	/* background-color: red; */
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: 'Inter', sans-serif;
+  }
 `;
