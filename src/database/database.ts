@@ -45,36 +45,6 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-  {
-    name: "Brazil 66",
-    type: ["Cachaça", "Triple Sec"],
-    ingredients: [
-      { name: "Cachaça", quantity: 75 },
-      { name: "Cointreau", quantity: 25 },
-      { name: "Suco de Laranja", quantity: 25 },
-      { name: "Suco de Limão", quantity: 25 },
-      { name: "Xarope Semi-Rich", quantity: 15 },
-    ],
-    recipe:
-      "Drink batido servido no Copo Rocks com simples coagem e cubo de gelo grande. Finalizado com Fatia de Limão.",
-    img: ["../../assets/Brazil 66-01.jpg", "../../assets/Brazil 66-02.jpg"],
-    hidden: true,
-  },
-  {
-    name: "Bombeirinho",
-    type: ["Cachaça"],
-    ingredients: [
-      { name: "Cachaça", quantity: 50 },
-      { name: "Suco de Laranja", quantity: 25 },
-      { name: "Suco de Limão Siciliano", quantity: 10 },
-      { name: "Suco de Limão", quantity: 10 },
-      { name: "Monin Groselha/Framboesa", quantity: 15 },
-    ],
-    recipe:
-      "Drink batido servido no Copo Longo com cubos de gelo. Finalizado com rodela de limão.",
-    img: ["../../assets/Bombeirinho-01.jpg", "../../assets/Bombeirinho-02.jpg"],
-    hidden: true,
-  },
   // #endregion
   // #region Espumante
   {
@@ -816,19 +786,6 @@ export const drinksDatabase: IDrink[] = [
     hidden: false,
   },
   {
-    name: "Mint Julep",
-    type: ["Whisky"],
-    ingredients: [
-      { name: "Whisky Bourbon", quantity: 50 },
-      { name: "Hortelã", quantity: 10 },
-      { name: "Xarope Simples", quantity: 15 },
-    ],
-    recipe:
-      "Hortelã levemente macerada. Drink montado servido no Copo Julep com gelo triturado. Finalizado com ramo de hortelã.",
-    img: ["../../assets/Mint Julep-01.jpg", "../../assets/Mint Julep-02.jpg"],
-    hidden: false,
-  },
-  {
     name: "Boulevardier",
     type: ["Whisky", "Licores", "Vermouth"],
     ingredients: [
@@ -892,6 +849,31 @@ export const drinksDatabase: IDrink[] = [
     img: [
       "../../assets/Tratto Limoncello-01.jpg",
       "../../assets/Tratto Limoncello-02.jpg",
+    ],
+    hidden: false,
+  },
+  {
+    name: "Long Island",
+    type: ["Whisky"],
+    ingredients: [
+      { name: "Whisky", quantity: 50 },
+      { name: "Cha Matte", quantity: 200 },
+    ],
+    recipe: "Drink montado no Copo Rocks com cubo de gelo grande.",
+    img: ["../../assets/Long Island-01.jpg", "../../assets/Long Island-02.jpg"],
+    hidden: false,
+  },
+  {
+    name: "Jack and Coke",
+    type: ["Whisky"],
+    ingredients: [
+      { name: "Jack Daniels", quantity: 50 },
+      { name: "Coca Cola", quantity: "Completar" },
+    ],
+    recipe: "Drink montado no Copo Longo com cubos de gelo",
+    img: [
+      "../../assets/Jack and Coke-01.jpg",
+      "../../assets/Jack and Coke-02.jpg",
     ],
     hidden: false,
   },
