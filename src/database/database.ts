@@ -331,7 +331,6 @@ export const drinksDatabase: IDrink[] = [
     img: [
       "../../assets/Soda Italiana-01.jpg",
       "../../assets/Soda Italiana-02.jpg",
-      "../../assets/Soda Italiana-03.jpg",
     ],
     hidden: false,
   },

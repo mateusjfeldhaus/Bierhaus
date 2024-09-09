@@ -2,9 +2,24 @@ import { IBevarege } from "../providers/drinksContext";
 
 export const beveragesDatabase: IBevarege[] = [
   //#region XAROPES
-  { name: "Xarope Simples", price: 1.65, quantity: 300, dateOfPurchase: "" },
-  { name: "Xarope Semi-Rich", price: 1.85, quantity: 300, dateOfPurchase: "" },
-  { name: "Xarope Rich", price: 2.0, quantity: 300, dateOfPurchase: "" },
+  {
+    name: "Xarope Simples",
+    price: 1.22,
+    quantity: 300,
+    dateOfPurchase: "2024-09-07",
+  },
+  {
+    name: "Xarope Semi-Rich",
+    price: 1.83,
+    quantity: 300,
+    dateOfPurchase: "2024-09-07",
+  },
+  {
+    name: "Xarope Rich",
+    price: 2.44,
+    quantity: 300,
+    dateOfPurchase: "2024-09-07",
+  },
   //#endregion
   //#region SUCOS
   {
@@ -25,53 +40,63 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 35.0,
     dateOfPurchase: "",
   },
-  { name: "Suco de Laranja", price: 2.82, quantity: 200.0, dateOfPurchase: "" },
-  { name: "Suco de Abacaxi", price: 2.82, quantity: 200.0, dateOfPurchase: "" },
+  {
+    name: "Suco de Laranja",
+    price: 1.99,
+    quantity: 200.0,
+    dateOfPurchase: "2024-09-07",
+  },
+  {
+    name: "Suco de Abacaxi",
+    price: 1.99,
+    quantity: 200.0,
+    dateOfPurchase: "2024-09-07",
+  },
   {
     name: "Suco de Laranja e Cranberry",
-    price: 2.82,
+    price: 1.99,
     quantity: 200.0,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-07",
   },
   {
     name: "Suco de Cranberry",
-    price: 2.82,
+    price: 1.99,
     quantity: 200.0,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-07",
   },
   //#endregion
   //#region REDBULL
   {
     name: "Redbull",
-    price: 7.91,
+    price: 7.49,
     quantity: 1,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-07",
   },
   {
     name: "Redbull Tropical",
-    price: 7.91,
+    price: 7.49,
     quantity: 1,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-07",
   },
   {
     name: "Redbull Sabores",
-    price: 7.91,
+    price: 7.49,
     quantity: 1,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-07",
   },
   //#endregion
   //#region ÁGUAS
   {
     name: "Água com Gás",
-    price: 1.9,
+    price: 1.09,
     quantity: 500,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-07",
   },
   {
     name: "Água sem Gás",
-    price: 1.9,
+    price: 1.09,
     quantity: 500,
-    dateOfPurchase: "",
+    dateOfPurchase: "2024-09-07",
   },
   {
     name: "Água Tônica",
@@ -86,7 +111,12 @@ export const beveragesDatabase: IBevarege[] = [
     quantity: 350,
     dateOfPurchase: "",
   },
-  { name: "Água de Coco", price: 3.45, quantity: 200, dateOfPurchase: "" },
+  {
+    name: "Água de Coco",
+    price: 2.39,
+    quantity: 200,
+    dateOfPurchase: "2024-09-07",
+  },
   //#endregion
   //#region MONIN
   {
