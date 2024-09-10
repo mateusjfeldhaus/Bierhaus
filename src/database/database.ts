@@ -745,9 +745,9 @@ export const drinksDatabase: IDrink[] = [
     name: "Old Fashioned",
     type: ["Whisky"],
     ingredients: [
-      { name: "Whisky Bourbon", quantity: 50 },
-      { name: "Xarope Simples", quantity: 5 },
-      { name: "Angostura", quantity: 3 },
+      { name: "Whisky Bourbon", quantity: 100 },
+      { name: "Xarope Simples", quantity: 10 },
+      { name: "Angostura", quantity: 6 },
     ],
     recipe:
       "Drink mexido servido no Copo Rocks com cubo de gelo grande. Finalizado com zest de laranja.",
@@ -780,7 +780,7 @@ export const drinksDatabase: IDrink[] = [
       { name: "Clara de Ovo", quantity: 1 },
     ],
     recipe:
-      "Drink batido servido no Copo Rocks com dupla coagem e cubo de gelo grande. Finalizado com zest de limão.",
+      "Drink batido duplamente, primeiro em Dry Shake e depois com gelo, servido no Copo Rocks com dupla coagem e cubo de gelo grande. Finalizado com zest de limão.",
     img: ["../../assets/Whisky Sour-01.jpg", "../../assets/Whisky Sour-02.jpg"],
     hidden: false,
   },
