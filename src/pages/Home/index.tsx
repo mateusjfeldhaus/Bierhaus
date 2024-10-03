@@ -6,19 +6,10 @@ import { DrinkContext } from "../../providers/drinksContext";
 import { beveragesDatabase } from "../../database/beverages";
 
 export const HomePage = () => {
-  const {
-    sumOfIngredients,
-    filterDrinksByIngredient,
-    costPerDrink,
-    getAllDrinksPrices,
-  } = useContext(DrinkContext);
+  const { sumOfIngredients, costPerDrink, getAllDrinksPrices } =
+    useContext(DrinkContext);
 
   // console.log(sumOfIngredients(drinksDatabase));
-
-  // console.log(filterDrinksByIngredient(drinksDatabase, "limão"));
-  // console.log(filterDrinksByIngredient(drinksDatabase, "monin"));
-  // console.log(filterDrinksByIngredient(drinksDatabase, "Dry Vermouth"));
-  // console.log(filterDrinksByIngredient(drinksDatabase, "Água de Coco"));
 
   // console.log(
   //   costPerDrink(drinksDatabase, beveragesDatabase, "tratto limoncello")
