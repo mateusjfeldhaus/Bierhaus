@@ -208,7 +208,7 @@ export const beveragesDatabase: IBevarege[] = [
     name: "Campari",
     price: 59.9,
     quantity: 998,
-    dateOfPurchase: "2024-10-03",
+    dateOfPurchase: "2024-11-06",
   },
   {
     name: "Dry Vermouth",
