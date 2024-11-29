@@ -206,7 +206,7 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Campari",
-    price: 59.9,
+    price: 58.83,
     quantity: 998,
     dateOfPurchase: "2024-11-06",
   },
@@ -230,7 +230,7 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Vermouth Cinzano 1757",
-    price: 189.9,
+    price: 162.07,
     quantity: 1000,
     dateOfPurchase: "",
   },
@@ -260,7 +260,7 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Licor 43",
-    price: 141.77,
+    price: 126.30,
     quantity: 700,
     dateOfPurchase: "2024-07-06",
   },
@@ -346,13 +346,13 @@ export const beveragesDatabase: IBevarege[] = [
   //#region GIN
   {
     name: "Gin",
-    price: 150.0,
+    price: 150,
     quantity: 750,
     dateOfPurchase: "",
   },
   {
     name: "Gin Beefeater 24",
-    price: 150.0,
+    price: 165.93,
     quantity: 750,
     dateOfPurchase: "",
   },
@@ -370,7 +370,7 @@ export const beveragesDatabase: IBevarege[] = [
   },
   {
     name: "Gin Bulldog",
-    price: 118.27,
+    price: 85.73,
     quantity: 750,
     dateOfPurchase: "2024-04-12",
   },
