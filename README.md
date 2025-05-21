@@ -63,8 +63,19 @@ bierhaus/
 │   │   └── beverages.ts
 │   │   └── database.ts
 │   ├── pages/
+│   │   └── 404NotFound
+│   │   └── AlkoholfreiPage
+│   │   └── CachacaPage
+│   │   └── EspumantePage
+│   │   └── GinPage
 │   │   └── Home
+│   │   └── LicorPage
+│   │   └── RumPage
+│   │   └── SakePage
+│   │   └── TequilaPage
 │   │   └── Utils
+│   │   └── VodkaPage
+│   │   └── WhiskyPage
 │   ├── providers/
 │   │   └── drinkContext.tsx
 │   ├── styles/
