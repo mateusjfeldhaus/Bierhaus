@@ -1,6 +1,121 @@
 # Projeto Bierhaus
 
-Este projeto tem como finalidade servir como um guia rápido para barmen e seus clientes no preparo e na escolha de drinks, respectivamente. Ele foi desenvolvido para ser acessado por meio de dispositivos móveis.
+Bierhaus é um projeto desenvolvido com o objetivo de facilitar o trabalho de **bartenders amadores** e **pequenos empreendedores** da coquetelaria, permitindo o **acesso rápido e organizado** a receitas de drinks diretamente pelo celular ou tablet, com imagens, modo de preparo e separação por categorias de bebidas.
+
+Projeto criado como parte da disciplina de Análise e Desenvolvimento de Sistemas – HoW X.
+
+---
+
+## 🚀 Funcionalidades
+
+- ✅ Exibição de receitas com título, ingredientes, modo de preparo e imagem ilustrativa  
+- ✅ Navegação por categorias (Vodka, Cachaça, Whisky, etc.)  
+- ✅ Design responsivo para smartphones e tablets  
+- ✅ Filtro por ingrediente  
+- ⚙️ Funções embutidas para cálculo de custo (visível em versão futura)  
+- 🔜 Busca por nome de drink *(em desenvolvimento)*
+
+---
+
+## 🧑‍💻 Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- CSS3 / HTML5
+- [Render](https://render.com/) (deploy gratuito)
+
+---
+
+## 📦 Instalação e Execução
+
+1. Clone o repositório:
+```bash
+git clone git@github.com:mateusjfeldhaus/Bierhaus.git
+cd bierhaus
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Rode o projeto localmente:
+```bash
+npm start
+```
+
+> O site estará disponível em: `http://localhost:3000`
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+bierhaus/
+├── public/
+│   └── index.html
+│   └── assets
+│     └── imagemDoDrink.jpg
+│     └── imagemDoDrink2.jpg
+├── src/
+│   ├── components/
+│   ├── database/
+│   │   └── beverages.ts
+│   │   └── database.ts
+│   ├── pages/
+│   │   └── Home
+│   │   └── Utils
+│   ├── providers/
+│   │   └── drinkContext.tsx
+│   ├── styles/
+│   │   └── drinkList.ts
+│   │   └── global.ts
+│   │   └── theme.ts
+│   │   └── wrapper.ts
+│   └── App.tsx
+│   └── index.tsx
+│   └── routes.tsx
+├── README.md
+├── package.json
+└── tsconfig.json
+```
+## 📷 Imagens do Projeto
+
+TO DO
+
+---
+
+## 🧪 Validação com Usuários
+
+O MVP foi testado com bartenders autônomos em simulações reais de atendimento.  
+**Feedbacks principais:**
+
+- *"Muito mais fácil do que ficar procurando no papel!"*  (Priscila) 
+- *"A imagem ajuda bastante para o cliente visualizar o drink."*  (Max)
+- *"Se tivesse busca por nome, seria perfeito para eventos maiores."* (José)
+
+---
+
+## 🔗 Links Importantes
+
+- 💻 **Site Online:** [https://bierhaus-4yo3.onrender.com](https://bierhaus-4yo3.onrender.com) 
+- 📁 **Relatório do Projeto:** [Link para download ou Google Drive] TO DO
+
+---
+
+## 📌 Licença
+
+Este projeto é de uso acadêmico e está licenciado sob a [MIT License](LICENSE).
+
+---
+
+## ✉️ Contato
+
+Desenvolvido por **Mateus João Feldhaus**  
+📧 [mateus.feldhaus@gmail.com](mailto:mateus.feldhaus@gmail.com)  
+🔗 [linkedin.com/in/mateusjoaofeldhaus](https://www.linkedin.com/in/mateus-joao-feldhaus/)
+
+---
 
 ## Desafios ao longo do projeto
 
