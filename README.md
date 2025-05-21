@@ -59,6 +59,10 @@ bierhaus/
 │     └── imagemDoDrink2.jpg
 ├── src/
 │   ├── components/
+│   │   └── DrinkList
+│   │   └── Footer
+│   │   └── Form
+│   │   └── Header
 │   ├── database/
 │   │   └── beverages.ts
 │   │   └── database.ts
