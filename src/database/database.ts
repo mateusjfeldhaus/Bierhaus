@@ -247,10 +247,10 @@ export const drinksDatabase: IDrink[] = [
     name: "Fitzgerald",
     type: ["Gin"],
     ingredients: [
-      { name: "Gin", quantity: 120 },
-      { name: "Xarope Simples", quantity: 50 },
-      { name: "Suco de Limão Siciliano", quantity: 50 },
-      { name: "Angostura", quantity: 6 },
+      { name: "Gin", quantity: 80 },
+      { name: "Xarope Simples", quantity: 30 },
+      { name: "Suco de Limão Siciliano", quantity: 30 },
+      { name: "Angostura", quantity: 4 },
     ],
     recipe:
       "Drink batido coado duplamente no Copo Rocks com cubo de gelo grande. Finalizado com zest de limão siciliano.",
@@ -322,8 +322,8 @@ export const drinksDatabase: IDrink[] = [
     name: "Soda Italiana",
     type: ["Não Alcoólicos"],
     ingredients: [
-      { name: "Monin Sabores", quantity: 40 },
-      { name: "Suco de Limão", quantity: 20 },
+      { name: "Monin Sabores", quantity: 50 },
+      { name: "Suco de Limão", quantity: 25 },
       { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe:
@@ -338,8 +338,8 @@ export const drinksDatabase: IDrink[] = [
     name: "Ice Tea",
     type: ["Não Alcoólicos"],
     ingredients: [
-      { name: "Monin Sabores", quantity: 40 },
-      { name: "Suco de Limão", quantity: 20 },
+      { name: "Monin Sabores", quantity: 50 },
+      { name: "Suco de Limão", quantity: 25 },
       { name: "Água sem Gás", quantity: "Completar" },
     ],
     recipe:
@@ -352,7 +352,7 @@ export const drinksDatabase: IDrink[] = [
     type: ["Não Alcoólicos"],
     ingredients: [
       { name: "Monin Grenadine", quantity: 50 },
-      { name: "Suco de Limão", quantity: 20 },
+      { name: "Suco de Limão", quantity: 25 },
       { name: "Água com Gás", quantity: "Completar" },
     ],
     recipe: "Drink montado servido no Copo Longo com cubos de gelo.",
