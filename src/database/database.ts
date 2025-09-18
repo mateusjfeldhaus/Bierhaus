@@ -284,7 +284,7 @@ export const drinksDatabase: IDrink[] = [
     recipe: "Drink montado em uma Taça Barone com bastante gelo",
     img: [],
     hidden: false
-  }
+  },
   // #endregion
   // #region Licores
   {
@@ -889,7 +889,7 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
-   {
+  {
     name: "Mark Twain",
     type: ["Whisky"],
     ingredients: [
