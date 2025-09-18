@@ -89,7 +89,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido sem o espumante, com dupla coagem servido na Taça resfriada. Completar volume com Espumante",
     img: ["../../assets/French 45-01.jpg", "../../assets/French 45-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "French 75",
@@ -103,7 +103,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido sem o espumante, com dupla coagem servido na Taça Marguerita. Completar com Espumante",
     img: ["../../assets/French 75-01.jpg", "../../assets/French 75-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Mimosa",
@@ -130,7 +130,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Hortelã levemente macerada. Drink batido sem o espumante, com dupla coagem servido na Taça Marguerita resfriada. Completar com Espumante. Finalizado com casca de limão e folha de hortelã.",
     img: ["../../assets/Old Cuban-01.jpg", "../../assets/Old Cuban-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   // #endregion
   // #region Gin
@@ -216,7 +216,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Bramble Black-01.jpg",
       "../../assets/Bramble Black-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Blue Lady",
@@ -360,7 +360,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Pink Lemonade-01.jpg",
       "../../assets/Pink Lemonade-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   // #endregion
   // #region Rum
@@ -406,7 +406,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido com simples coagem servido no Copo Longo com cubos de gelo. Finalizado com fatia de abacaxi e cereja.",
     img: ["../../assets/Pina Colada-01.jpg", "../../assets/Pina Colada-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Queens Park Swizzle",
@@ -550,7 +550,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink Mexido com coagem simples, servido no Copo Rocks, com cubo de gelo grande. Finalizado com fatia e zest de laranja.",
     img: ["../../assets/Teqroni-01.jpg", "../../assets/Teqroni-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Long Island Ice Tea",
@@ -571,7 +571,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Long Island Ice Tea-01.jpg",
       "../../assets/Long Island Ice Tea-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Tequila Sunrise",
@@ -587,7 +587,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Tequila Sunrise-01.jpg",
       "../../assets/Tequila Sunrise-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Matador",
@@ -600,7 +600,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido com coagem simples servido na Taça Margarita levemente resfriada.",
     img: ["../../assets/Matador-01.jpg", "../../assets/Matador-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Mexican Mule",
@@ -617,7 +617,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Mexican Mule-01.jpg",
       "../../assets/Mexican Mule-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   // #endregion
   // #region Vodka
@@ -692,7 +692,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Sex on the Beach-01.jpg",
       "../../assets/Sex on the Beach-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Black Russian",
@@ -707,7 +707,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Black Russian-01.jpg",
       "../../assets/Black Russian-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Lemon Drop",
@@ -720,7 +720,7 @@ export const drinksDatabase: IDrink[] = [
     recipe:
       "Drink batido servido na Taça Martini levemente resfriada. Finalizado com zest de limão.",
     img: ["../../assets/Lemon Drop-01.jpg", "../../assets/Lemon Drop-02.jpg"],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Cosmopolitan",
@@ -737,7 +737,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Cosmopolitan-01.jpg",
       "../../assets/Cosmopolitan-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   // #endregion
   // #region Whisky
@@ -815,7 +815,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/John Collins-01.jpg",
       "../../assets/John Collins-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Johnnie Highball",
@@ -831,7 +831,7 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Johnnie Highball-01.jpg",
       "../../assets/Johnnie Highball-02.jpg",
     ],
-    hidden: false,
+    hidden: true,
   },
   {
     name: "Tratto Limoncello",
