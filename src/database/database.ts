@@ -272,6 +272,19 @@ export const drinksDatabase: IDrink[] = [
     img: ["../../assets/Bronx-01.jpg", "../../assets/Bronx-02.jpg"],
     hidden: false,
   },
+  {
+    name: "Tan Tan",
+    type: ["Gin", "Vermouth"],
+    ingredients: [
+      { name: "Gin", quantity: 50 },
+      { name: "Campari", quantity: 30 },
+      { name: "Monin Gengibre", quantity: 10 },
+      { name: "Água Tônica", quantity: "Completar" }
+    ],
+    recipe: "Drink montado em uma Taça Barone com bastante gelo",
+    img: [],
+    hidden: false
+  }
   // #endregion
   // #region Licores
   {
@@ -874,6 +887,20 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Jack and Coke-01.jpg",
       "../../assets/Jack and Coke-02.jpg",
     ],
+    hidden: false,
+  },
+   {
+    name: "Mark Twain",
+    type: ["Whisky"],
+    ingredients: [
+      { name: "Scotch Whisky", quantity: 80 },
+      { name: "Xarope Simples", quantity: 30 },
+      { name: "Suco de Limão Siciliano", quantity: 30 },
+      { name: "Angostura", quantity: 4 },
+    ],
+    recipe:
+      "Drink batido coado duplamente no Copo Rocks com cubo de gelo grande. Finalizado com zest de limão siciliano.",
+    img: [],
     hidden: false,
   },
   // #endregion
