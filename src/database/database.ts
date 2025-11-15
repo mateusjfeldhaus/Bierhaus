@@ -904,4 +904,50 @@ export const drinksDatabase: IDrink[] = [
     hidden: false,
   },
   // #endregion
+  // Drinks Adicionados em 15/11/2025, Preciso categorizar depois
+
+  {
+    name: "Americano",
+    type: ["Licores", "Vermouth"],
+    ingredients: [
+      { name: "Campari", quantity: 50 },
+      { name: "Vermouth Rosso", quantity: 50 },
+      { name: "Água com gás", quantity: 50 }
+    ],
+    recipe: "Drink montado num copo rocks. Finalizado com fatia de laranja",
+    img: [""],
+    hidden: false,
+  },
+  {
+    name: "The Original Moscow Mule",
+    type: ["Vodka"],
+    ingredients: [
+      { name: "Vodka", quantity: 60 },
+      { name: "Suco de Limão", quantity: 25 },
+      { name: "Ginger Soda", quantity: "Completar" }],
+    recipe: "Drink montado em uma caneca de cobre. Finalizado com fatia de limão",
+    img: [""],
+    hidden: false
+  },
+  {
+    name: "Penicilin",
+    type: ["Whisky"],
+    ingredients: [
+      { name: "Scotch Whisky", quantity: 60 },
+      { name: "Fatia de Gengibre", quantity: 3 },
+      { name: "Suco de Limão Siciliano", quantity: 20 },
+      { name: "Xarope de mel 3:1", quantity: 20 }
+    ],
+    recipe: "Amassar levemente as fatias de gengibre. Drink batido, com dupla coação, servido no copo rocks com cubo de gelo grande",
+    img: [""],
+    hidden: false
+  }
+
+
+
+
 ];
+
+
+
+
