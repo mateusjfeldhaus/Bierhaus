@@ -42,6 +42,7 @@ export interface IDrinkContext {
     database: IDrink[],
     ingredientName: string
   ): IDrink[];
+  filterDrinksByName(query: string): IDrink[];
   costPerDrink: (
     drinksDatabase: IDrink[],
     beveragesDatabase: IBevarege[],
@@ -137,6 +138,17 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
       drink.ingredients.some((ingredient) =>
         removeAccents(ingredient.name.toLowerCase()).includes(searchTerm)
       )
+    );
+  };
+
+  const filterDrinksByName = (query: string): IDrink[] => {
+    if (!query.trim()) return [];
+    function removeAccents(str: string): string {
+      return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+    const searchTerm = removeAccents(query.toLowerCase());
+    return drinksDatabase.filter((drink) =>
+      removeAccents(drink.name.toLowerCase()).includes(searchTerm)
     );
   };
 
@@ -254,6 +266,7 @@ export const DrinkProvider: React.FC<{ children: ReactNode }> = ({
         whiskyList,
         sumOfIngredients,
         filterDrinksByIngredient,
+        filterDrinksByName,
         costPerDrink,
         getAllDrinksPrices,
       }}

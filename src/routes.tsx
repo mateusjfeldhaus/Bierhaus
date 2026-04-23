@@ -12,6 +12,9 @@ import { VodkaPage } from "./pages/VodkaPage";
 import { WhiskyPage } from "./pages/WhiskyPage";
 import { NotFound } from "./pages/404NotFound";
 import { UtilsPage } from "./pages/UtilsPage";
+import { SearchPage } from "./pages/SearchPage";
+import { ContactPage } from "./pages/ContactPage";
+
 
 export const Router = () => {
   return (
@@ -29,6 +32,8 @@ export const Router = () => {
       <Route path="/whisky" element={<WhiskyPage />} />
       <Route path="/utils" element={<UtilsPage />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/search" element={<SearchPage />} />
+       <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
 };
