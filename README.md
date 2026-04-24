@@ -13,7 +13,8 @@ Projeto criado como parte da disciplina de Análise e Desenvolvimento de Sistema
 - ✅ Design responsivo para smartphones e tablets  
 - ✅ Filtro por ingrediente  
 - ⚙️ Funções embutidas para cálculo de custo (visível em versão futura)  
-- 🔜 Busca por nome de drink *(em desenvolvimento)*
+- ✅ Busca por nome de drink
+- ✅ Página institucional de contato
 
 ---
 
@@ -80,6 +81,8 @@ bierhaus/
 │   │   └── Utils
 │   │   └── VodkaPage
 │   │   └── WhiskyPage
+│   │   └── ContatoPage
+│   │   └── SearchPage
 │   ├── providers/
 │   │   └── drinkContext.tsx
 │   ├── styles/
@@ -152,6 +155,22 @@ Inicialmente, a concepção desta base de dados não incluía um campo de `dateO
 
 A criação desta função apresentou algumas dificuldades. A primeira era a dificuldade de extrair informações úteis para um cálculo a partir de `strings`, o que foi corrigido transformando `ingredients` em um array de objetos. O desafio seguinte foi que, na `beveragesDatabase`, algumas `quantities` não são valores numéricos, mas sim `strings`, como "Completar" e "Pitada". Para atribuir um valor numérico e conseguir fazer um cálculo útil para determinar o valor do drink, tratei esses dados e, quando essas `strings` aparecem, o preço do ingrediente completo é utilizado para o cálculo.
 
+### SearchBar
+
+Implementada em abril de 2026 como parte da disciplina HoW. A busca por nome foi adicionada ao `Header` como um campo expansível — ao clicar na lupa, um input aparece abaixo da linha de botões; ao submeter, o usuário é redirecionado para `/search?q=nome`, onde a `SearchPage` lê o parâmetro via `useSearchParams` e exibe os resultados usando o `DrinkList` já existente.
+
+A função `filterDrinksByName` foi adicionada ao `drinksContext`, seguindo o mesmo padrão de `filterDrinksByIngredient`: normaliza acentos com `normalize("NFD")` antes de comparar, garantindo que "Mojito", "mojito" e "mõjito" retornem o mesmo resultado. A query fica na URL para preservar o histórico do navegador e permitir compartilhamento do resultado.
+
+O `Footer` foi atualizado para ocultar os botões de navegação em `/search`, já que essa rota está fora do fluxo sequencial de categorias.
+
+### Página de Contato
+
+Implementada em abril de 2026. Rota `/contato`, acessível pelo menu de navegação (hamburguer no mobile, horizontal no desktop) — sem entrada no Footer, pois não faz parte do fluxo de categorias.
+
+A página apresenta três seções: apresentação do bartender, área de atuação e regiões atendidas, e cards de contato (WhatsApp, e-mail e Instagram) com links diretos. Os cards usam `styled-components` seguindo o tema do projeto (`theme.colors.primary`) e têm hover com `rgba` da cor primária para manter a identidade visual.
+
+O Footer foi atualizado para também ocultar os botões em `/contato`, centralizando essa lógica no array `hideOn` do componente.
+
 ## Implementações futuras
 
-Este projeto possui algumas funções interessantes, que no momento só podem ser acessadas por meio de `console.log`. Pretendo implementar uma página chamada `utils`, na qual haverá formulários para que essas funções possam ser utilizadas pelo usuário final. As funções em questão são: `sumOfIngredients`, `filterDrinksByIngredient`, `costPerDrink` e `getAllDrinksPrices`.
+Este projeto possui algumas funções interessantes que no momento só podem ser acessadas via `console.log`. Pretendo expô-las na página `Utils` por meio de formulários para uso pelo usuário final. As funções pendentes são: `sumOfIngredients`, `costPerDrink` e `getAllDrinksPrices`.
