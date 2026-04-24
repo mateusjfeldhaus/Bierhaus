@@ -18,8 +18,8 @@ export const Footer = () => {
     { path: "/vodka", label: "Vodka" },
     { path: "/whisky", label: "Whisky" },
     { path: "/utils", label: "Utils" },
-    { path: "/search", label: "search" },
-    { path: "/contact", label: "contato" }
+    { path: "/search", label: "Search" },
+    { path: "/contact", label: "Contato" }
   ];
 
   const currentIndex = menuItems.findIndex(
