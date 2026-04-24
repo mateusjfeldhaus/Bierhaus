@@ -45,6 +45,22 @@ export const drinksDatabase: IDrink[] = [
     ],
     hidden: false,
   },
+  {
+    name: "Jasmine 2.0",
+    type: ["Cachaça", "Licores"],
+    ingredients: [
+      { name: "Cachaça", quantity: 45 },
+      { name: "Suco de Limão", quantity: 22 },
+      { name: "Campari", quantity: 7 },
+      { name: "Cointreau", quantity: 7 },
+      { name: "Xarope Simples", quantity: 7 },
+    ],
+    recipe:
+      "Drink batido com coagem simples servido no Copo Rocks com cubo de gelo novo. Finalizado com twist de laranja.",
+    img: [],
+    hidden: false,
+  },
+
   // #endregion
   // #region Espumante
   {
@@ -284,6 +300,20 @@ export const drinksDatabase: IDrink[] = [
     recipe: "Drink montado em uma Taça Barone com bastante gelo",
     img: [],
     hidden: false
+  },
+  {
+    name: "Tom Collins",
+    type: ["Gin"],
+    ingredients: [
+      { name: "Gin", quantity: 50 },
+      { name: "Suco de Limão Siciliano", quantity: 25 },
+      { name: "Xarope Simples", quantity: 15 },
+      { name: "Água com Gás", quantity: "Completar" },
+    ],
+    recipe:
+      "Drink montado em Copo Longo com cubos de gelo. Finalizado com rodela de limão.",
+    img: [],
+    hidden: false,
   },
   // #endregion
   // #region Licores
