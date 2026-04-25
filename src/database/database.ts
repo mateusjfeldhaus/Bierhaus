@@ -315,6 +315,20 @@ export const drinksDatabase: IDrink[] = [
     img: [],
     hidden: false,
   },
+  {
+    name: "Clover Club",
+    type: ["Gin"],
+    ingredients: [
+      { name: "Gin", quantity: 60 },
+      { name: "Suco de Limão", quantity: 20 },
+      { name: "Grenadine", quantity: 15 },
+      { name: "Clara de Ovo", quantity: 1 },
+    ],
+    recipe:
+      "Dry shake primeiro sem gelo. Adicionar gelo e bater novamente. Servido com dupla coagem na Taça Coupe gelada. Finalizado com 3 framboesas.",
+    img: [],
+    hidden: false,
+  },
   // #endregion
   // #region Licores
   {
@@ -496,6 +510,21 @@ export const drinksDatabase: IDrink[] = [
       "../../assets/Cointreau Daiquiri-01.jpg",
       "../../assets/Cointreau Daiquiri-02.jpg",
     ],
+    hidden: false,
+  },
+  {
+    name: "Jungle Bird",
+    type: ["Rum", "Licores"],
+    ingredients: [
+      { name: "Rum", quantity: 45 },
+      { name: "Campari", quantity: 20 },
+      { name: "Suco de Abacaxi", quantity: 45 },
+      { name: "Suco de Limão", quantity: 15 },
+      { name: "Xarope Simples", quantity: 15 },
+    ],
+    recipe:
+      "Drink batido com coagem simples servido no Copo Rocks com cubo de gelo grande.",
+    img: [],
     hidden: false,
   },
   // #endregion
@@ -933,6 +962,34 @@ export const drinksDatabase: IDrink[] = [
     img: [],
     hidden: false,
   },
+  {
+    name: "Rob Roy",
+    type: ["Whisky", "Vermouth"],
+    ingredients: [
+      { name: "Scotch Whisky", quantity: 60 },
+      { name: "Vermouth Rosso", quantity: 30 },
+      { name: "Angostura", quantity: 2 },
+    ],
+    recipe:
+      "Drink mexido servido na Taça Coupe levemente resfriada. Finalizado com cereja.",
+    img: [],
+    hidden: false,
+  },
+  {
+    name: "Paper Plane",
+    type: ["Whisky", "Licores"],
+    ingredients: [
+      { name: "Whisky Bourbon", quantity: 30 },
+      { name: "Aperol", quantity: 30 },
+      { name: "Cointreau", quantity: 30 },
+      { name: "Suco de Limão", quantity: 30 },
+    ],
+    recipe:
+      "Drink batido com dupla coagem servido na Taça Coupe levemente resfriada.",
+    img: [],
+    hidden: false,
+  },
+
   // #endregion
   // Drinks Adicionados em 15/11/2025, Preciso categorizar depois
 
